@@ -18,15 +18,19 @@
         <h2 class="topbar_time">Tu 12/8/25 13:00</h2>
         <h2 class="topbar_temperature">20°C</h2>
     </div>
-    <div class="back_map">
-        <svg class="back_map_icon" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
-        <path d="M19.25 10.5L8.75 21M8.75 21L19.25 31.5M8.75 21H33.25" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-        <a href="../index.html"></a>
-      </svg>
-    </div>
+  
 
-    <div>
-        <img src="" alt="">
+    <div class="map-container">
+        <img src="../resources/map.png" alt="map" class="map_image">
+        <div class="back_map">
+            <svg class="back_map_icon" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+            <path d="M19.25 10.5L8.75 21M8.75 21L19.25 31.5M8.75 21H33.25" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <a href="../index.html"></a>
+            </svg>
+        </div>
+        <div class="pin" style="top: 30%; left: 40%;" onclick="showInfo('Location 1')"></div>
+        <div class="pin" style="top: 50%; left: 60%;" onclick="showInfo('Location 2')"></div>
+        <div class="pin" style="top: 70%; left: 20%;" onclick="showInfo('Location 3')"></div>
     </div>
 
 
