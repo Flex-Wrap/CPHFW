@@ -84,12 +84,17 @@ a {
 }
 
 .back_map{
+    position: absolute; /* Position it absolutely within the .map-container */
+    top: 20px; /* Adjust position as needed */
+    left: 20px; /* Adjust position as needed */
     display: inline-flex;
-    padding: var(--blur, 10px);
+    padding: 10px;
     align-items: center;
-    gap: var(--blur, 10px);
-    border-radius: var(--blur, 10px);
-    background: #FFF;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: #FFF; /* Make sure it has a visible background */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 .back_map_icon{
@@ -107,6 +112,7 @@ a {
     position: relative;
     width: 100%;
     max-width: 1440px; /* Ensures it doesn’t exceed 1440px on larger screens */
+    max-height: 1024px;
     height: auto;      /* Allows height to scale with width */
     overflow: hidden;
 }
