@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => { // when the webpage is ready, tun the code inside the curly brackets
-    fetch("designers.json") //gets data from the JSON file
+    fetch("../resources/designers/designers.json") //gets data from the JSON file
         .then(response => response.json()) //converts data from JSON to JS objects
         .then(designers => {
             const designerCards = document.getElementById("designer-cards");
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => { // when the webpage is rea
 
                 // Create image element
                 const img = document.createElement("img");
-                img.src = designer.picture;
+                img.src = `../resources/designers/${designer.picture}`;
                 img.alt = designer.name;
 
                 // Create name element
