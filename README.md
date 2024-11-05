@@ -1,2 +1,3 @@
 # CPHFW
-Javengers prpject for school.
+Javengers project for school.
+Doing an info screen for copenhagen fashion week
