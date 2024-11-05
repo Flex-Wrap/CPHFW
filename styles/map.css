@@ -1,0 +1,98 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html, body {
+    max-width: 1440px;
+    font-size: 100%;
+    font-family: sans-serif;
+    line-height: 1;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+button, input, select, textarea {
+    font: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+
+
+.topbar{
+    display: flex;
+    width: 1440px;
+    height: 75px;
+    padding: 3px 19px;
+    justify-content: center;
+    align-items: center;
+    gap: 503px;
+    background: #FFF;
+    /* Topbar-cart */
+    box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+.topbar_logo{
+    color: var(--Labels-Primary, #000);
+    font-family: "Roboto Condensed";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 80%; /* 25.6px */
+    letter-spacing: -1.28px;
+}
+
+.topbar_time{
+    width: 161px;
+    flex-shrink: 0;
+    color: var(--Labels-Primary, #000);
+    text-align: center;
+    font-family: "Roboto Condensed";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.96px;
+}
+
+.topbar_temperature{
+    color: var(--Labels-Primary, #000);
+    font-family: "Roboto Condensed";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80%; /* 28.8px */
+    letter-spacing: -1.44px;
+}
+
+.back_map{
+    display: inline-flex;
+    padding: var(--blur, 10px);
+    align-items: center;
+    gap: var(--blur, 10px);
+    border-radius: var(--blur, 10px);
+    background: #FFF;
+}
+
+.back_map_icon{
+    width: 42px;
+    height: 42px;
+}
