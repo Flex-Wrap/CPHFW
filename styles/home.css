@@ -1,0 +1,134 @@
+@import url('general.css');
+
+body {
+    padding: 20px;
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: var(--color-grey); 
+}
+
+.social_media_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;/*center it horizontally*/
+    width: 315px;
+    height: 340px;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    padding-left: 13px;
+    padding-right: 13px;
+    background-color: var(--color-white); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+
+}
+
+.SM_text {
+    font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-style: var(--font-style-header);
+  text-align: center;
+  line-height: normal;
+
+}
+
+.group_parent {
+    display: flex;
+    flex-wrap: wrap;
+    width: 196px;
+    height: 158px;
+    gap: 21px 60px;
+}
+
+.social_button{
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+    width: 68px; 
+    height: 68px; 
+    cursor: pointer; 
+}
+
+
+.down_text {
+    font-optical-sizing: auto;
+    font-style: var(--font-style-header2);
+    text-transform: uppercase;
+}
+
+/*QR code card*/
+
+.container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: var(--color-white);
+    width: 747px;
+    height: 731px;
+    opacity: 0;
+}
+.container.active{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.QR_header{
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    font-optical-sizing: auto;
+    font-style: var(--font-style-header);
+    text-align: center;
+    line-height: normal;
+    text-transform: uppercase;
+    flex: 1;
+    margin-top: 68px;
+}
+
+.close-button{
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+    position: absolute;
+    top: 68px;
+    left: 48px;
+    padding: 5px;
+}
+
+.QR_body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 75%;
+}
+
+#overlay{
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
