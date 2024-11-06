@@ -121,6 +121,10 @@ html, body {
     margin: 43px 60px 109px 60px;
 }
 
+#designer-cards a{
+    text-decoration: none;
+}
+
 .card {
     width: 427px;
     height: 465px;

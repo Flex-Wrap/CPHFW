@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => { // when the webpage is rea
 
                 // Create image element
                 const img = document.createElement("img");
-                img.src = `../resources/designers/${designer.picture}`;
+                img.src = `../resources/designers/${designer.mainPicture}`;
                 img.alt = designer.name;
 
                 // Create name element
@@ -27,7 +27,15 @@ document.addEventListener("DOMContentLoaded", () => { // when the webpage is rea
                 card.appendChild(name);
 
                 // Put the card inside the designerCards div
-                designerCards.appendChild(card);
+               // designerCards.appendChild(card);
+
+                // Create a link to the designer's detail page (designer.html) using their unique ID
+                const designerString = encodeURIComponent(JSON.stringify(designer));
+                const link = document.createElement('a');
+                link.href = `each-designer.html?data=${designerString}`;  // Add the designer's ID as a query parameter
+                link.appendChild(card);  // Make the entire card clickable
+
+                designerCards.appendChild(link);
             });
         })
         .catch(error => console.error("Error loading designer data:", error));
