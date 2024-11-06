@@ -1,5 +1,24 @@
+@import url(general.css);
 nav{
     display: flex;
-    width: 100%;
     justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--color-white);
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.15);
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+#nav-date{
+    text-align: center;
+}
+
+#nav-time{
+    margin-top: 10px;
+    text-align: center;
 }
