@@ -1,4 +1,6 @@
 @import url('general.css');
+@import url('events-card.css');
+@import url('social_media_card.css');
 
 .main-container{
     height: 100%;
@@ -18,10 +20,6 @@
     height: 100%;
 }
 
-.events-card{
-    background-color: red;
-    height: 100%;
-}
 .bottom-container {
     display: grid;
     grid-template-columns: 6fr 3fr 3fr; /* 6/12 and 3/12 for the rest */
@@ -39,56 +37,9 @@
     gap: 20px; /* Space between columns */
 }
 
-
-.social_media_card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
-    align-items: center;/*center it horizontally*/
-    width: 315px;
-    height: 340px;
-    padding-top: 20px;
-    padding-bottom: 20px; 
-    padding-left: 13px;
-    padding-right: 13px;
-    background-color: var(--color-white); 
-    border-radius: 10px; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
-
-}
-
-.SM_text {
-  font: var(--font-style-header);
-  text-align: center;
-  line-height: normal;
-}
-
-.group_parent {
-    display: flex;
-    flex-wrap: wrap;
-    width: 196px;
-    height: 158px;
-    gap: 21px 60px;
-}
-
-.social_button{
-    cursor: pointer;
-    border: none;
-    background: none;
-    outline: none;
-    width: 68px; 
-    height: 68px; 
-}
-
-
-.down_text {
-    font: var(--font-style-header2);
-    text-transform: uppercase;
-}
-
 /*QR code card*/
 
-.container{
+.qr-container{
     position: fixed;
     top: 50%;
     left: 50%;
@@ -101,7 +52,7 @@
     height: 731px;
     opacity: 0;
 }
-.container.active{
+.qr-container.active{
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
 }

@@ -1,0 +1,41 @@
+.social_media_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;/*center it horizontally*/
+    width: 315px;
+    height: 340px;
+    padding: 20px 13px;
+    background-color: var(--color-white); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+
+}
+
+.social_media_card h1 {
+  font: var(--font-style-header);
+  text-align: center;
+  line-height: normal;
+}
+
+.social_media_card h2 {
+    font: var(--font-style-header2);
+    text-transform: uppercase;
+  }
+
+.group_parent {
+    display: flex;
+    flex-wrap: wrap;
+    width: 196px;
+    height: 158px;
+    gap: 21px 60px;
+}
+
+.social_button{
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+    width: 68px; 
+    height: 68px; 
+}
