@@ -9,7 +9,7 @@
 
 .top-container {
     display: grid;
-    grid-template-columns: 4fr 8fr; /* 4/12 and 8/12 */
+    grid-template-columns: 5fr 7fr; /* 4/12 and 8/12 */
     height: 100%;
 }
 
