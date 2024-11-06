@@ -1,89 +1,111 @@
 [
     {
+        "id": 1,
         "name": "(DI)VISION",
         "picture": "division.jpg"
     },
     {
+        "id": 2,
         "name": "A. ROEGE HOVE",
         "picture": "roege.jpg"
     },
     {
+        "id": 3,
         "name": "AIAYU",
         "picture": "ayaiu.jpg"
     },
     {
+        "id": 4,
         "name": "ALECTRA ROTHSCHILD",
         "picture": "alectra-rothchild.jpg"
     },
     {
+        "id": 5,
         "name": "ANOTHER ASPECT",
         "picture": "another-aspect.jpg"
     },
     {
+        "id": 6,
         "name": "BAUM UND PFERDGARTEN",
         "picture": "baum-und-pferdgarten.JPG"
     },
     {
+        "id": 7,
         "name": "BERNER KUHL",
         "picture": "berner-kuhl.jpg"
     },
     {
+        "id": 8,
         "name": "BONNETJE",
         "picture": "BONNETJE.jpg"
     },
     {
+        "id": 9,
         "name": "CARO EDITIONS",
         "picture": "caro-editions.jpg"
     },
     {
+        "id": 10,
         "name": "DEADWOOD",
         "picture": "deadwood.jpg"
     },
     {
+        "id": 11,
         "name": "FINE CHAOS",
         "picture": "fine-chaos.jpg"
     },
     {
+        "id": 12,
         "name": "FORTZA COLLECTIVE",
         "picture": "fortza collective.jpg"
     },
     {
+        "id": 13,
         "name": "GESTUZ",
         "picture": "gestuz.jpg"
     },
     {
+        "id": 14,
         "name": "HAN KJØBENHAVN",
         "picture": "han-kjøbenhavn.jpg"
     },
     {
+        "id": 15,
         "name": "HENRIK VIBSKOV",
         "picture": "henrik-vibskov.jpg"
     },
     {
+        "id": 16,
         "name": "HERSKIND",
         "picture": "herskind.jpg"
     },
     {
+        "id": 17,
         "name": "JADE CROPPER",
         "picture": "jade-cropper.jpg"
     },
     {
+        "id": 18,
         "name": "JOAO MARASCHIN",
         "picture": "joao-maraschin.jpg"
     },
     {
+        "id": 19,
         "name": "LOVECHILD 1979",
         "picture": "lovechild.jpg"
     },
     {
+        "id": 20,
         "name": "MARIMERKKO",
         "picture": "marimekko.JPG"
     },
     {
+        "id": 21,
         "name": "MUNTHE",
         "picture": "munthe.jpg"
     },
     {
+        "id": 22,
         "name": "NICKLAS SKOVGAARD",
         "picture": "Nicklas-Skovgaard.jpg"
     },
