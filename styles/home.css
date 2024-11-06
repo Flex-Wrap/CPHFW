@@ -1,11 +1,37 @@
 @import url('general.css');
 
-body {
-    padding: 20px;
-    margin: 0;
-    font-family: "Roboto Condensed", sans-serif;
-    background-color: var(--color-grey); 
+.top-container {
+    display: grid;
+    grid-template-columns: 4fr 8fr; /* 4/12 and 8/12 */
+    height: 50vh; /* Half the height of the viewport */
 }
+
+.left-top{
+    background-color: blue;
+    height: 100%;
+}
+
+.right-top{
+    background-color: red;
+    height: 100%;
+}
+.bottom-container {
+    display: grid;
+    grid-template-columns: 6fr 3fr 3fr 3fr; /* 6/12 and 3/12 for the rest */
+    height: 50vh; /* Half the height of the viewport */
+}
+
+.left-bottom, .middle-bottom, .right-bottom {
+    background-color: green; /* Light grey background for visualization */
+    padding: 20px;
+    height: 100%; /* Fill the entire height */
+}
+
+/* Optional styling to see the grid lines */
+.top-container, .bottom-container {
+    gap: 20px; /* Space between columns */
+}
+
 
 .social_media_card {
     display: flex;
