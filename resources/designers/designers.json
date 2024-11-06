@@ -1,25 +1,31 @@
 [
     {
+        "id": 1,
         "name": "(DI)VISION",
         "picture": "division.jpg"
     },
     {
+        "id": 2,
         "name": "A. ROEGE HOVE",
         "picture": "roege.jpg"
     },
     {
+        "id": 3,
         "name": "AIAYU",
         "picture": "ayaiu.jpg"
     },
     {
+        "id": 4,
         "name": "ALECTRA ROTHSCHILD",
         "picture": "alectra-rothchild.jpg"
     },
     {
+        "id": 5,
         "name": "ANOTHER ASPECT",
         "picture": "another-aspect.jpg"
     },
     {
+        "id"
         "name": "BAUM UND PFERDGARTEN",
         "picture": "baum-und-pferdgarten.JPG"
     },
