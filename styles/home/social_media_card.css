@@ -1,3 +1,45 @@
+@import url('general.css');
+
+.main-container{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 3fr 2fr;
+    gap: 20px;
+}
+
+.top-container {
+    display: grid;
+    grid-template-columns: 5fr 7fr; /* 4/12 and 8/12 */
+    height: 100%;
+}
+
+.left-top{
+    background-color: blue;
+    height: 100%;
+}
+
+.events-card{
+    background-color: red;
+    height: 100%;
+}
+.bottom-container {
+    display: grid;
+    grid-template-columns: 6fr 3fr 3fr; /* 6/12 and 3/12 for the rest */
+    height: 100%;
+}
+
+.left-bottom, .middle-bottom, .right-bottom {
+    background-color: green; /* Light grey background for visualization */
+    padding: 20px;
+    height: 100%; /* Fill the entire height */
+}
+
+/* Optional styling to see the grid lines */
+.top-container, .bottom-container {
+    gap: 20px; /* Space between columns */
+}
+
+
 .social_media_card {
     display: flex;
     flex-direction: column;
@@ -5,23 +47,21 @@
     align-items: center;/*center it horizontally*/
     width: 315px;
     height: 340px;
-    padding: 20px 13px;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    padding-left: 13px;
+    padding-right: 13px;
     background-color: var(--color-white); 
     border-radius: 10px; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
 
 }
 
-.social_media_card h1 {
+.SM_text {
   font: var(--font-style-header);
   text-align: center;
   line-height: normal;
 }
-
-.social_media_card h2 {
-    font: var(--font-style-header2);
-    text-transform: uppercase;
-  }
 
 .group_parent {
     display: flex;
@@ -40,7 +80,15 @@
     height: 68px; 
 }
 
-.qr-container{
+
+.down_text {
+    font: var(--font-style-header2);
+    text-transform: uppercase;
+}
+
+/*QR code card*/
+
+.container{
     position: fixed;
     top: 50%;
     left: 50%;
@@ -53,7 +101,7 @@
     height: 731px;
     opacity: 0;
 }
-.qr-container.active{
+.container.active{
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
 }
@@ -111,3 +159,100 @@
     opacity: 1;
     pointer-events: all;
 }
+/*get our app*/
+.rectangle{
+    width: 315px;
+    height: 340px;
+    background-color: var(--color-white);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+}
+.main_text{
+  font-optical-sizing: auto;
+  font: var(--font-style-header);
+  font-style: normal;
+  text-align: center;
+  line-height: normal;
+}
+
+.QR_code{
+    cursor: pointer;
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.QR_code img {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+}
+
+/*designer cards*/
+.designers_card{
+    padding-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    height: 340px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+}
+
+.designers_header{
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font: var(--font-style-header);
+    text-align: center;
+    line-height: normal;
+}
+
+.designers_cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.image_mask{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 10px;
+    overflow: hidden;
+}
+.designer_text{
+  font-optical-sizing: auto;
+  font: var(--font-style-header2);
+  text-align: center;
+  line-height: normal;
+}
+
+.see_all_button{
+    display: flex;
+    width: 114px;
+    height: 24px;
+    padding: 7px 8px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background: #FF5C00;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
