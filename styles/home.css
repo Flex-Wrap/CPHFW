@@ -78,7 +78,6 @@
     outline: none;
     width: 68px; 
     height: 68px; 
-    cursor: pointer; 
 }
 
 
@@ -182,6 +181,7 @@
 }
 
 .QR_code{
+    cursor: pointer;
     border: none;
     background: none;
     display: flex;
