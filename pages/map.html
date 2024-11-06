@@ -24,9 +24,17 @@
     <div class="map-container">
         <img src="../resources/map.png" alt="map" class="map-image">
     
-        <div class="map-icon location1" onclick="showInfo('Location 1')"></div>
-        <div class="map-icon location2" onclick="showInfo('Location 2')"></div>
-        <div class="map-icon location3" onclick="showInfo('Location 3')"></div>
+        <div class="map-icon location1" onclick="showInfo('Royal Danish Theatre', 'Kongens Nytorv 9, 1050 Copenhagen')"></div>
+        <div class="map-icon location2" onclick="showInfo('Location 2', 'Vesterbro 12, 1050 Copenhagen')"></div>
+        <div class="map-icon location3" onclick="showInfo('Location 3', 'Nørrebro 7, 2200 Copenhagen')"></div>
+
+    </div>
+
+
+    <div class="info-box" id="info-box">
+        <h3 id="location-name"></h3>
+        <p id="location-details"></p>
+        <button id="close-btn" onclick="closeInfoBox()">Close</button>
     </div>
     
     
