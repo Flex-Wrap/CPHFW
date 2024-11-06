@@ -3,7 +3,7 @@
 .main-container{
     height: 100%;
     display: grid;
-    grid-template-rows: 2fr 2fr;
+    grid-template-rows: 3fr 2fr;
     gap: 20px;
 }
 

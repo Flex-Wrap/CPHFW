@@ -28,8 +28,10 @@ appQRButton.addEventListener('click', () => {
     qrImage.src = appQRButton.getAttribute('data-qr');
 });
 
+
 // Close the pop up when the close button is clicked
 closeButton.addEventListener('click', () => {
+    container.style.backgroundColor = 'red';
     container.classList.remove('active');
     overlay.classList.remove('active');
 });
