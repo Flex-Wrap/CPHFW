@@ -1,9 +1,16 @@
 @import url('general.css');
 
+.main-container{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+    gap: 20px;
+}
+
 .top-container {
     display: grid;
     grid-template-columns: 4fr 8fr; /* 4/12 and 8/12 */
-    height: 50vh; /* Half the height of the viewport */
+    height: 100%;
 }
 
 .left-top{
@@ -17,8 +24,8 @@
 }
 .bottom-container {
     display: grid;
-    grid-template-columns: 6fr 3fr 3fr 3fr; /* 6/12 and 3/12 for the rest */
-    height: 50vh; /* Half the height of the viewport */
+    grid-template-columns: 6fr 3fr 3fr; /* 6/12 and 3/12 for the rest */
+    height: 100%;
 }
 
 .left-bottom, .middle-bottom, .right-bottom {
