@@ -57,7 +57,7 @@
     {
         "id": 12,
         "name": "FORTZA COLLECTIVE",
-        "picture": "fortza collective.jpg"
+        "picture": "fortza-collective.jpg"
     },
     {
         "id": 13,
@@ -110,58 +110,72 @@
         "picture": "Nicklas-Skovgaard.jpg"
     },
     {
+        "id": 23,
         "name": "OPERASPORT",
         "picture": "operasport.jpg"
     },
     {
+        "id": 24,
         "name": "RABENS SALONER",
         "picture": "rabens-saloner.jpg"
     },
     {
+        "id": 25,
         "name": "REMAIN",
         "picture": "remain.jpg"
     },
     {
+        "id": 26,
         "name": "ROLF EKROTH",
         "picture": "rolf-ekroth.jpg"
     },
     {
+        "id": 27,
         "name": "ROTATE",
         "picture": "rotate.jpg"
     },
     {
+        "id": 28,
         "name": "SINEAD O'DWYER",
         "picture": "sinead-odwyer.jpg"
     },
     {
+        "id": 29,
         "name": "SKALL STUDIO",
         "picture": "skall-studio.jpg"
     },
     {
+        "id": 30,
         "name": "SOL HANSDOTTIR",
         "picture": "sol-hansdottir.jpg"
     },
     {
+        "id": 31,
         "name": "STAMM",
         "picture": "stamm.jpg"
     },
     {
+        "id": 32,
         "name": "STEM",
         "picture": "stem.jpg"
     },
     {
+        "id": 33,
         "name": "SWEDISH SCHOOL OF TEXTILES",
         "picture": "swedish-school-of-textiles.JPG"
     },
     {
+        "id": 34,
         "name": "THE GARMENT",
         "picture": "the-garment.jpg"
     },
     {
+        "id": 35,
         "name": "THE ROYAL DANISH ACADEMY",
         "picture": "the-royal-danish-academy.jpg"
     },
     {
+        "id": 36,
         "name": "WON HUNDRED",
         "picture": "won-hundred.jpg"
     }
