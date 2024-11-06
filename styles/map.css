@@ -8,6 +8,7 @@
 
 html, body {
     max-width: 1440px;
+    max-height: 1024px;
     font-size: 100%;
     font-family: sans-serif;
     line-height: 1;
@@ -33,7 +34,7 @@ a {
 
 
 
-
+/* TOP BAR */
 
 
 .topbar{
@@ -83,24 +84,7 @@ a {
     letter-spacing: -1.44px;
 }
 
-.back_map{
-    position: absolute; /* Position it absolutely within the .map-container */
-    top: 20px; /* Adjust position as needed */
-    left: 20px; /* Adjust position as needed */
-    display: inline-flex;
-    padding: 10px;
-    align-items: center;
-    gap: 10px;
-    border-radius: 10px;
-    background-color: #FFF; /* Make sure it has a visible background */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-}
 
-.back_map_icon{
-    width: 42px;
-    height: 42px;
-}
 
 
 
@@ -119,19 +103,49 @@ a {
 
 .map-image {
     width: 100%;       /* Full width of the container */
-    height: auto; 
+    height: auto;
+    position: relative; 
+    z-index: 0;
 }
 
-.pin {
+.map-icon {
     position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: orange;
-    border-radius: 50%;
+    width: 70px;
+    height: 70px;
     cursor: pointer;
     transform: translate(-50%, -50%);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: transparent; /* Ensure background is transparent */
 }
+
+/* SVG icon styling */
+.map-icon::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('/resources/icons/pinicon.svg'); /* Adjust the path as needed */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* Positioning for each map icon */
+.location1 {
+    top: 30%;
+    left: 40%;
+}
+
+.location2 {
+    top: 50%;
+    left: 60%;
+}
+
+.location3 {
+    top: 70%;
+    left: 20%;
+}
+
 
 .info-box {
     position: absolute;

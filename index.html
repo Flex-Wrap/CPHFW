@@ -4,12 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPHFW</title>
-    <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/navbar.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -26,5 +22,37 @@
         <li><a href="pages/map.html">Map</a></li>
         <li><a href="pages/events.html">Events</a></li>
     </ul>
+    <div class="social_media_card">
+        <div class="SM_text">SOCIAL MEDIA</div>
+        <div class="group_parent">
+            <button class="social_button" data-qr="resources/images/instagramQR.png">
+                <img src="resources/images/instagram.png" alt="instagram">
+            </button>
+            <button class="social_button" data-qr="resources/images/tiktokQR.png">
+                <img src="resources/images/tiktok.png" alt="tiktok">
+            </button>
+            <button class="social_button" data-qr="resources/images/twitterQR.png">
+                <img src="resources/images/twitter.png" alt="twitter">
+            </button>
+            <button class="social_button" data-qr="resources/images/youtubeQR.png">
+                <img src="resources/images/youtube.png" alt="youtube">
+            </button>
+        </div>
+        <div class="down_text">Click and scan</div>
+        </div>
+
+    <div class="container" id="container">
+        <div class="QR_header">
+            <button class="close-button">
+                <img src="resources/images/arrow-back.png" alt="back button">
+            </button>
+            <div class="title">INSTAGRAM</div>
+        </div>
+        <div class="QR_body">
+            <img src="resources/images/instagramQR.png" alt="QR code instagram">
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <script src="javascript/home.js"></script>
 </body>
 </html>
