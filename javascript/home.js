@@ -1,5 +1,5 @@
 const socialButtons = document.querySelectorAll('.social_button');
-const container = document.getElementById('container');
+const container = document.getElementById('qr-container');
 const overlay = document.getElementById('overlay');
 const closeButton = document.querySelector('.close-button');
 const qrImage = document.querySelector('.QR_body img');
@@ -27,6 +27,7 @@ appQRButton.addEventListener('click', () => {
     container.querySelector('.title').textContent = "CPHFW APP";
     qrImage.src = appQRButton.getAttribute('data-qr');
 });
+
 
 // Close the pop up when the close button is clicked
 closeButton.addEventListener('click', () => {

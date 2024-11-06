@@ -1,0 +1,77 @@
+@import url('general.css');
+@import url('events-card.css');
+@import url('social_media_card.css');
+
+.main-container{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 3fr 2fr;
+    gap: 20px;
+}
+
+.top-container {
+    display: grid;
+    grid-template-columns: 5fr 7fr; /* 4/12 and 8/12 */
+    height: 100%;
+}
+
+.left-top{
+    background-color: blue;
+    height: 100%;
+}
+
+.bottom-container {
+    display: grid;
+    grid-template-columns: 6fr 3fr 3fr; /* 6/12 and 3/12 for the rest */
+    height: 100%;
+}
+
+.left-bottom, .middle-bottom, .right-bottom {
+    background-color: green; /* Light grey background for visualization */
+    padding: 20px;
+    height: 100%; /* Fill the entire height */
+}
+
+/* Optional styling to see the grid lines */
+.top-container, .bottom-container {
+    gap: 20px; /* Space between columns */
+}
+
+
+/*get our app*/
+.rectangle{
+    width: 315px;
+    height: 340px;
+    background-color: var(--color-white);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+}
+.main_text{
+  font-optical-sizing: auto;
+  font: var(--font-style-header);
+  font-style: normal;
+  text-align: center;
+  line-height: normal;
+}
+
+.QR_code{
+    cursor: pointer;
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.QR_code img {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+}
+
+

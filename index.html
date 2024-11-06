@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPHFW</title>
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home/main.css">
     <link rel="stylesheet" href="styles/navbar.css">
 </head>
 <body>
@@ -20,14 +20,59 @@
     <div class="main-container">
         <div class="top-container">
             <div class="left-top">Left 4/12</div>
-            <div class="right-top">Right 8/12</div>
+            <div class="events-card">
+                <h1>Events</h1>
+                <p> Events nearby</p>
+                <div class="event-list">
+                    <div class="event-card-mini">
+                        <h1>Father Earth</h1>
+                        <p> 19:30 - 20:00</p>
+                        <p> YADAYDAYDYYAYDYYAYDYAYDFYAY</p>
+                    </div>
+
+                </div>
+            </div>
         </div>
         <div class="bottom-container">
             <div class="left-bottom">Left 6/12</div>
-            <div class="middle-bottom">Middle 3/12</div>
-            <div class="right-bottom">Right 3/12</div>
+            <div class="social_media_card">
+                <h1>SOCIAL MEDIA</h1>
+                <div class="group_parent">
+                    <button class="social_button" data-qr="resources/images/instagramQR.png">
+                        <img src="resources/images/instagram.png" alt="instagram">
+                    </button>
+                    <button class="social_button" data-qr="resources/images/tiktokQR.png">
+                        <img src="resources/images/tiktok.png" alt="tiktok">
+                    </button>
+                    <button class="social_button" data-qr="resources/images/twitterQR.png">
+                        <img src="resources/images/twitter.png" alt="twitter">
+                    </button>
+                    <button class="social_button" data-qr="resources/images/youtubeQR.png">
+                        <img src="resources/images/youtube.png" alt="youtube">
+                    </button>
+                </div>
+                <h2>Click and scan</h2>
+                </div>
+        
+           
+                <div class="rectangle">
+                    <div class="main_text">GET OUR APP</div>
+                    <button id="appQRButton" class="QR_code" data-qr="resources/images/appQR.png"><img src="resources/images/appQR.png" alt="CPHFW APP"></button>
+                </div>
         </div>
     </div>
+    <div class="qr-container" id="qr-container">
+        <div class="QR_header">
+            <button class="close-button">
+                <img src="resources/images/arrow-back.png" alt="back button">
+            </button>
+            <div class="title">INSTAGRAM</div>
+        </div>
+        <div class="QR_body">
+            <img src="resources/images/instagramQR.png" alt="QR code instagram">
+        </div>
+    </div>
+    <div id="overlay"></div>
 </main>
     <script src="javascript/home.js"></script>
 </body>
