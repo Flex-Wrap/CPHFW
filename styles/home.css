@@ -24,7 +24,7 @@
 }
 .bottom-container {
     display: grid;
-    grid-template-columns: 6fr 3fr 3fr 3fr; /* 6/12 and 3/12 for the rest */
+    grid-template-columns: 6fr 3fr 3fr; /* 6/12 and 3/12 for the rest */
     height: 100%;
 }
 
