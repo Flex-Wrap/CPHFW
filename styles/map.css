@@ -129,6 +129,11 @@ a {
     background-position: center;
 }
 
+.map-icon.selected {
+    background-color: black;
+}
+
+
 
 /* Positioning for each map icon */
 .location1 {
@@ -147,17 +152,69 @@ a {
 }
 
 
+
+
+
+/* Info Box Styling */
 .info-box {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    border-radius: 5px;
-    font-family: Arial, sans-serif;
     display: none; /* Hidden by default */
-    text-align: center;
-    width: 200px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 1440px;  /* Ensures it doesn’t exceed 1440px */
+    height: 50%; /* Takes up half of the page */
+    background-color: white; /* White background for the info box */
+    padding: 30px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    font-family: Arial, sans-serif;
+    z-index: 1; /* Ensure the info box is above the map */
+    border-top: 2px solid #ccc; /* Optional: Adds a border between the map and info box */
+    border-radius: var(--blur, 10px) var(--blur, 10px) 0px 0px;
+    background: #FFF;
+}
+
+
+.info-box-name{
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+
+
+#location-name {
+    color: var(--Labels-Primary, #000); /* HEADER 1 */
+    font-family: "Roboto Condensed";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+#location-details {
+    color: var(--Labels-Primary, #000);/* infoscreen-header3 */
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 88.383%; /* 17.677px */
+}
+
+
+
+/* Close button styling */
+#close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #ffffff; /* Red background */
+    border: none;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
 }
