@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <link rel="stylesheet" href="../styles/designers.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/general.css">
 </head>
 <body>
     <nav>
@@ -16,14 +19,24 @@
     </nav>
     <main>
         <div class="title-container">
-            <div class="back-button">&larr; BACK</div>
+            <a href="designers.html"><div class="back-button">&larr; BACK</div></a>
             <h1 class="title" id="designer-name"></h1>
+            <div class="buttons">
+                <button class="previous-button" id="previous-button">Previous designer</button>
+                <button class="next-button" id="next-button">Next designer</button>
+            </div>
         </div>
         <section class="photo-bio-container">
             <img id="main-picture" src="" alt="">
-            <div class-text-container>
-                <h2>About</h2>
+            <div class="text-container">
+                <h2>ABOUT</h2>
                 <p id="designer-bio"></p>
+                <div class="social-media-icons">
+                    <img src="../resources/images/instagram.png" alt="Instagram">
+                    <img src="../resources/images/twitter.png" alt="X">
+                    <img src="../resources/images/tiktok.png" alt="Tik-Tok">
+                    <img src="../resources/images/youtube.png" alt="Youtube">
+                </div>
             </div>
         </section>
         <section class="gallery">
