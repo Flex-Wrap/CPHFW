@@ -1,4 +1,4 @@
-@import url('general.css');
+@import url('../general.css');
 
 .social_media_card {
     display: flex;

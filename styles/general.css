@@ -12,7 +12,7 @@
     --font-style-header: normal bold 48px/1.2 'Roboto Condensed', sans-serif;  /* Header (48px bold) */
     --font-style-header2: normal bold 24px/1.3 'Roboto Condensed', sans-serif; /* Header2 (24px bold) */
     --font-style-header3: normal normal 20px/1.4 'Roboto Condensed', sans-serif; /* Header3 (20px normal) */
-    --font-style-body-text: normal normal 18px/1.5 'Roboto', sans-serif; /* BodyText (16px normal) */
+    --font-style-body-text: normal normal 16px/1.5 'Roboto', sans-serif; /* BodyText (16px normal) */
 }
 
 *{
