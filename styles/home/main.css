@@ -42,8 +42,6 @@
 
 /*get our app*/
 .rectangle{
-    width: 315px;
-    height: 340px;
     background-color: var(--color-white);
     border-radius: 10px;
     display: flex;
