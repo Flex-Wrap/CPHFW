@@ -3,75 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
      background-color: #f5f5f5;
 }
-/*
-html, body {
-    max-width: 1440px;
-    font-size: 100%;
-    font-family: sans-serif;
-    line-height: 1;
-}
-    */
 
-/* ---------- TOP BAR ---------- */
-
-.topbar{
-    display: flex;
-    width: 1440px;
-    height: 75px;
-    padding: 3px 19px;
-    justify-content: center;
-    align-items: center;
-    gap: 503px;
-    background: #FFF;
-    /* Topbar-cart */
-    box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.15);
-    margin-bottom: 50px;
-}
-
-
-.topbar_logo{
-    color: var(--Labels-Primary, #000);
-    font-family: "Roboto Condensed";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 80%; /* 25.6px */
-    letter-spacing: -1.28px;
-}
-
-.topbar_time{
-    width: 161px;
-    flex-shrink: 0;
-    color: var(--Labels-Primary, #000);
-    text-align: center;
-    font-family: "Roboto Condensed";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.96px;
-}
-
-.topbar_temperature{
-    color: var(--Labels-Primary, #000);
-    font-family: "Roboto Condensed";
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 80%; /* 28.8px */
-    letter-spacing: -1.44px;
-}
-
-/* ----------- TOP BAR END ----------- */
 
 .title-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
     margin-bottom: 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.title-container a {
+    text-decoration: none;
+    color: var(--color-black);
 }
 
 .back-button {
@@ -84,8 +34,8 @@ html, body {
     font-weight: 500;
     font-style: normal;
     font-size: 20px;
-    left: 100px;
     position: absolute;
+    left: 0;
 }
 
 .title {
@@ -97,11 +47,48 @@ html, body {
     text-align: center;
     margin: 0;
     flex: 1;
+    position: absolute;
+    left: 50%; /* Centers title horizontally */
+    transform: translateX(-50%); /* Offset by 50% of its width */
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: absolute;
+    right: 0;
+}
+
+.previous-button {
+    background-color: var(--color-white);
+    box-shadow: 0 0.1px 10px rgba(0, 0, 0, 0.2);
+    padding: 6px 14px;
+    border: 0;
+    border-radius: 10px;
+    color: var(--color-orange);
+    font-family: "Robotot", sans-serif;
+    font-weight: 500;
+}
+
+.next-button {
+    background-color: var(--color-orange);
+    width: 114px;
+    padding: 6px 14px;
+    border-radius: 10px;
+    color: var(--color-white);
+    border: 0;
+    box-shadow: 0 0.1px 10px rgba(0, 0, 0, 0.2);
+    font-family: "Robotot", sans-serif;
+    font-weight: 500;
 }
 
 .alphabet-nav {
+    width: 1440px;
+    background-color: var(--color-grey);
+    box-shadow: 0 0 0 0;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 34px;
     justify-content: center;
     overflow-x: auto;
@@ -116,9 +103,10 @@ html, body {
 #designer-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 19px;
+    column-gap: 19px;
+    row-gap: 30px;
     justify-content: center;
-    margin: 43px 60px 109px 60px;
+    margin: 43px 0 109px 0;
 }
 
 #designer-cards a{
@@ -153,3 +141,70 @@ html, body {
     font-style: normal;
 }
 
+/* --- EACH DESIGNER PAGE --*/
+
+.photo-bio-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 107px;
+}
+
+#main-picture {
+    width: 540px;
+    height: 674px;
+    border-radius: 10px;
+    box-shadow: 0 0.1px 10px rgba(0, 0, 0, 0.2);
+    margin-right: 135px;
+}
+
+.text-container h2 {
+    font-size: 24px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: 24px;
+}
+
+.text-container p {
+    font-family: "Robotot", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: left;
+    column-gap: 60px;
+}
+
+.social-media-icons img {
+    width: 67px;
+    height: 67px;
+}
+
+#gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 27px;
+}
+
+.gallery img {
+    width: 427px;
+    height: 607px;
+    border-radius: 10px;
+    box-shadow: 0 0.1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.gallery h2 {
+    font-size: 24px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: 24px;
+}

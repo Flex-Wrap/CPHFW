@@ -44,15 +44,15 @@
     {
         "id": 4,
         "name": "ALECTRA ROTHSCHILD",
-        "bio": "Founded in Copenhagen by Creative Director Maria Heilmann, Aiayu emerged from a desire to create a responsible collection of timeless, beloved pieces crafted from pure and natural materials. The brand is celebrated for its “soft universe” of effortless, enduring designs, focusing on premium materials, handcrafted knitwear, and a soothing palette of natural tones.\n\nAiayu has continually evolved, expanding its offerings to include tailored pieces, European-made outerwear, and versatile unisex styles that resonate with today’s needs. With a distinctly modern take on functional, minimalist style, Aiayu perfectly embodies the Scandinavian way of life.\n\nToday, Aiayu is led by the women-led duo of Creative Director & Founder Maria Høgh Heilmann and CEO Maria Glæsel. Well-established in the Nordic region, Aiayu has flagship stores in Copenhagen, Frederiksberg, and Aarhus, and is also distributed through select retailers in continental Europe, the US, and Asia.",
-        "mainPicture": "ayaiu.jpg",
+        "bio": "Alectra Rothschild began her journey in fashion as a trained tailor before studying at Beckmans College of Design and pursuing an MA in Fashion under Fabio Piras at Central Saint Martins. She further explored sustainability and fashion at the Royal Danish Academy. During this period, Alectra trained with renowned designers Iris Van Herpen and Anne Sofie Madsen. Her first role in the fashion industry was at Mugler under Casey Cadwallader, and she has since freelanced for Alexander McQueen and collaborated with Birkenstock.\n\nSince graduating, Alectra’s work has captured attention across the fashion world. i-D Magazine named her among the “best of CPHFW SS23 + FW23,” and Dazed selected her for the Dazed100 List 2022. She was also chosen as the first CPHFW NEWTALENT: One to Watch for FW23. Most recently, she presented a performance for CPHFW SS24 with Viscose Journal.\n\nAlectra’s designs have been embraced by high-profile stars like Arca, MØ, Zara Larsson, and Michèle Lamy, establishing her as an exciting and innovative voice in contemporary fashion.",
+        "mainPicture": "alectra-rothchild.jpg",
         "gallery": [
-            "aiayu1.jpg",
-            "aiayu2.jpg",
-            "aiayu3.jpg",
-            "aiayu4.jpg",
-            "aiayu5.jpg",
-            "aiayu6.jpg"
+            "alectra1.jpg",
+            "alectra2.jpg",
+            "alectra3.jpg",
+            "alectra4.jpg",
+            "alectra5.jpg",
+            "alectra6.jpg"
         ]
     },
     {
@@ -135,7 +135,7 @@
             "deadwood2.jpg",
             "deadwood3.jpg",
             "deadwood4.jpg",
-            "deadwodd5.jpg",
+            "deadwood5.jpg",
             "deadwood6.jpg"
         ]
     },
@@ -198,7 +198,7 @@
     {
         "id": 15,
         "name": "HENRIK VIBSKOV",
-        "bio": "Henrik Vibskov is a renowned Danish fashion designer, artist, curator, and musician, widely known for his eponymous fashion brand. His work is celebrated for its captivating universes that blend fashion with elements of art, installation, scenography, performance, and exhibitions. Vibskov’s designs transcend the traditional boundaries of fashion, often intersecting with other creative fields to create immersive, multi-disciplinary experiences.\n\nSince graduating from Central Saint Martins in 2001, Henrik Vibskov has created over 40 fashion collections and showcased his work at numerous international design fairs, festivals, and museums. His exhibitions have been featured in prestigious venues across the globe, including MoMA in New York, Palais de Tokyo in Paris, The 21st Century Museum of Contemporary Art in Kanazawa, and the ICA in London. Vibskov’s unique approach to fashion and art has made him a prominent figure in both industries, gaining recognition for his boundary-pushing creativity and innovative designs.",
+        "bio": "Henrik Vibskov is a renowned Danish fashion designer, artist, curator, and musician, widely known for his eponymous fashion brand. His work is celebrated for its captivating universes that blend fashion with elements of art, installation, scenography, performance, and exhibitions. Vibskov’s designs transcend the traditional boundaries of fashion, often intersecting with other creative fields to create immersive, multi-disciplinary experiences. \n\n* * *\n\n Since graduating from Central Saint Martins in 2001, Henrik Vibskov has created over 40 fashion collections and showcased his work at numerous international design fairs, festivals, and museums. His exhibitions have been featured in prestigious venues across the globe, including MoMA in New York, Palais de Tokyo in Paris, The 21st Century Museum of Contemporary Art in Kanazawa, and the ICA in London. Vibskov’s unique approach to fashion and art has made him a prominent figure in both industries, gaining recognition for his boundary-pushing creativity and innovative designs.",
         "mainPicture": "henrik-vibskov.jpg",
         "gallery": [
             "henrik1.jpg",
@@ -477,7 +477,6 @@
     },
     {
         "id": 35,
-        "name": "THE ROYAL DANISH ACADEMY",
         "name": "THE ROYAL DANISH ACADEMY",
         "bio": "Impeccable quality and craftsmanship are the foundation of The Royal Dansih Academy’s aesthetic, where every piece reflects a deep commitment to excellence. The brand’s tailored Atelier collections, created with meticulous attention to detail, are produced following the time-honored couture tradition, ensuring each garment is a masterpiece in itself.\n\nThese exclusive collections can be found in the brand’s design studio, located in the heart of central Copenhagen, where the essence of high fashion and bespoke tailoring come to life. MKDT Studio is dedicated to producing garments that embody sophistication and timeless elegance, offering clients a truly elevated and personalized fashion experience.",
         "mainPicture": "the-royal-danish-academy.jpg",

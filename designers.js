@@ -1,10 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => { // when the webpage is ready, tun the code inside the curly brackets
     fetch("../resources/designers/designers.json") //gets data from the JSON file
         .then(response => response.json()) //converts data from JSON to JS objects
-        .then(designers => {
+        .then(designersData => {
+            localStorage.setItem("designers", JSON.stringify(designersData));
+
             const designerCards = document.getElementById("designer-cards");
 
-            designers.forEach(designer => {
+            designersData.forEach(designer => {
                 // Create card container
                 const card = document.createElement("div");
                 card.classList.add("card"); //adds a class to the HTML element created
