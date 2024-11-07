@@ -127,7 +127,7 @@
         "date": "2025-08-06",
         "time": "14:30 - 16:30",
         "description": "Ukrainian Fashion Week presents an inspiring fashion presentation at Amalienborg Palace Square. This event brings together designers from Ukraine, showcasing unique styles in an iconic Danish location.",
-        "mainPicture": "../photos/.jpg"
+        "mainPicture": "../photos/Ukrainian-Fashion-Week.jpg"
     },
     {
         "id": 14,
@@ -137,7 +137,7 @@
         "date": "2025-08-06",
         "time": "15:00 - 15:30",
         "description": "Join Lovechild 1979's fashion show at Ny Carlsberg Glyptotek. This event highlights a feminine, modern collection against the stunning backdrop of a historic museum, blending art and fashion.",
-        "mainPicture": "../photos/14.jpg"
+        "mainPicture": "../photos/Lovechild-1979.jpg"
     },
     {
         "id": 15,
@@ -147,7 +147,7 @@
         "date": "2025-08-06",
         "time": "16:30 - 18:30",
         "description": "Explore the avant-garde fashion of Nicklas Skovgaard in a presentation at Charlottenborg Palace, a venue synonymous with Danish art and culture. This event offers a unique perspective on modern fashion design.",
-        "mainPicture": "../photos/15.jpg"
+        "mainPicture": "../photos/Nicklas-Skovgaard.jpg"
     },
     {
         "id": 16,
@@ -157,7 +157,7 @@
         "date": "2025-08-06",
         "time": "17:00 - 17:30",
         "description": "Join the innovative fashion show by Stamm at the Royal Danish Theatre, where traditional craftsmanship meets avant-garde design. Known for blending sustainable practices with forward-thinking styles, Stamm creates pieces that challenge conventional fashion norms.",
-        "mainPicture": "../photos/16.jpg"
+        "mainPicture": "../photos/Stamm.jpg"
     },
     {
         "id": 17,
@@ -167,7 +167,7 @@
         "date": "2025-08-06",
         "time": "17:30 - 19:30",
         "description": "Explore a unique presentation by Another Aspect, held in the stunning architecture of the National Gallery of Denmark. Known for its approach to slow fashion, Another Aspect focuses on timeless designs that emphasize quality over trend.",
-        "mainPicture": "../photos/17.jpg"
+        "mainPicture": "../photos/Another-Aspect.jpg"
     },
     {
         "id": 18,
@@ -177,7 +177,7 @@
         "date": "2025-08-06",
         "time": "19:00 - 19:30",
         "description": "(di)vision presents a thought-provoking fashion show at the Copenhagen City Hall, pushing the boundaries of conventional fashion with a unique approach to upcycling and reimagined streetwear. Known for transforming discarded materials into wearable art, (di)vision combines deconstructed silhouettes with bold patterns.",
-        "mainPicture": "../photos/18.jpg"
+        "mainPicture": "../photos/(di)vision.jpg"
     },
     {
         "id": 19,
@@ -187,7 +187,7 @@
         "date": "2025-08-05",
         "time": "19:30 - 22:00",
         "description": "Welcome to the Father Earth Fashion Event—a transcendent experience where fashion and nature unite in a breathtaking homage to our planet. Tonight, the wilderness is our runway, and Earth itself is our muse. Beneath a starlit canopy, amidst ancient trees and whispering leaves, you are invited to journey into a world where art, sustainability, and raw elegance collide.",
-        "mainPicture": "../photos/division.jpg"
+        "mainPicture": "../photos/Father-Earth.jpg"
     },
     {
         "id": 20,
@@ -197,7 +197,7 @@
         "date": "2025-08-05",
         "time": "10:30 - 12:30",
         "description": "Experience the avant-garde artistry of YOUNG LATEX, a boundary-pushing show exploring the intersections of fashion, modernism, and raw expression. Hosted in Copenhagen’s architectural masterpiece, The Black Diamond.",
-        "mainPicture": "../photos/2.jpg"
+        "mainPicture": "../photos/Young-Latex.jpg"
     },
     {
         "id": 21,
@@ -207,7 +207,7 @@
         "date": "2025-08-05",
         "time": "21:30 - 23:00",
         "description": "West is Best offers an immersive fashion experience, spotlighting the latest Western-inspired trends and aesthetics. Blending rugged charm with contemporary style, this event brings together designs that evoke freedom, strength, and individuality.",
-        "mainPicture": "../photos/2.jpg"
+        "mainPicture": "../photos/West-Is-Best.png"
     },
     {
         "id": 22,
@@ -217,7 +217,7 @@
         "date": "2025-08-06",
         "time": "19:30 - 22:00",
         "description": "The Transgender Pride Parade is a celebration of resilience, diversity, and unity, bringing together people from all walks of life to honor the beauty and strength of the transgender community. This event is a reminder that every individual deserves respect, love, and a voice.",
-        "mainPicture": "../photos/2.jpg"
+        "mainPicture": "../photos/Transgender-parade.jpg"
     },
     {
         "id": 23,
@@ -227,7 +227,7 @@
         "date": "2024-08-05",
         "time": "19:00 - 22:00",
         "description": "Join us for the exclusive opening reception to kick off the festivities with a night of fashion and networking.",
-        "mainPicture": "../photos/2.jpg"
+        "mainPicture": "../photos/.jpg"
     },
     {
         "id": 24,
