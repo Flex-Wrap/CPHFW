@@ -1,6 +1,8 @@
-@import url('general.css');
+@import url('../general.css');
+@import url('../navbar.css');
 @import url('events-card.css');
 @import url('social_media_card.css');
+@import url('designers-card.css');
 
 .main-container{
     height: 100%;
@@ -73,5 +75,3 @@
     height: 240px;
     object-fit: cover;
 }
-
-
