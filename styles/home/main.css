@@ -3,6 +3,7 @@
 @import url('events-card.css');
 @import url('social_media_card.css');
 @import url('designers-card.css');
+@import url('homemap.css');
 
 .main-container{
     height: 100%;
