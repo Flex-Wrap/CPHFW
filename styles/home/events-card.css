@@ -9,6 +9,10 @@
     min-width: 0;
 }
 
+.events-card p{
+    padding: 10px;
+}
+
 .event-list {
     display: grid;
     flex-grow: 1;
@@ -26,4 +30,5 @@
     word-wrap: break-word;
     overflow-wrap: break-word; 
     white-space: normal;
+    font-size: 14px;
 }

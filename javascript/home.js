@@ -1,3 +1,17 @@
+// Fetch the events from the events.json file
+fetch('../resources/events/events.json')
+    .then(response => response.json())  // Parse the JSON data from the file
+    .then(events => {
+        // Get the first 3 events
+        const firstThreeEvents = events.slice(0, 3);
+
+        // Call function to generate event cards
+        generateEventCards(firstThreeEvents);
+    })
+    .catch(error => {
+        console.error("Error loading the events data:", error);
+    });
+
 const socialButtons = document.querySelectorAll('.social_button');
 const container = document.getElementById('qr-container');
 const overlay = document.getElementById('overlay');
@@ -38,4 +52,27 @@ closeButton.addEventListener('click', () => {
 //take user to the page after clicking on the designer
 function navigateTo(page){
     window.location.href = page;
+}
+
+
+// Function to generate event cards dynamically
+function generateEventCards(events) {
+    const eventList = document.querySelector('.event-list');
+
+    // Clear the event list before adding new cards
+    eventList.innerHTML = '';
+
+    // Loop through each event and create the HTML for the event card
+    events.forEach(event => {
+        const eventCard = document.createElement('div');
+        eventCard.classList.add('event-card-mini');
+
+        eventCard.innerHTML = `
+            <h2>${event.eventname}</h2>
+            <p>${event.time}</p>
+            <p>${event.description}</p>
+        `;
+
+        eventList.appendChild(eventCard);
+    });
 }
