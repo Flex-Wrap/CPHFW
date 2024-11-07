@@ -1,4 +1,5 @@
-@import url('general.css');
+@import url('../general.css');
+@import url('../navbar.css');
 @import url('events-card.css');
 @import url('social_media_card.css');
 
