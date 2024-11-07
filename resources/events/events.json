@@ -227,7 +227,7 @@
         "date": "2024-08-05",
         "time": "19:00 - 22:00",
         "description": "Join us for the exclusive opening reception to kick off the festivities with a night of fashion and networking.",
-        "mainPicture": "../photos/.jpg"
+        "mainPicture": "../photos/Opening-reception.jpg"
     },
     {
         "id": 24,
@@ -237,7 +237,7 @@
         "date": "2024-08-06",
         "time": "19:00 - 22:00",
         "description": "Explore the latest designs from emerging fashion talent in this unique showroom showcasing creativity and innovation.",
-        "mainPicture": "../photos/2.jpg"
+        "mainPicture": "../photos/Newtalent-showroom.jpg"
     },
     {
         "id": 25,
@@ -247,7 +247,7 @@
         "date": "2024-08-08",
         "time": "23:00 - 3:00",
         "description": "A late-night event for creators to mingle, collaborate, and celebrate artistic expression in the world of fashion.",
-        "mainPicture": "../photos/2.jpg"
+        "mainPicture": "../photos/Creator-Hub.jpg"
     },
     {
         "id": 26,
@@ -257,6 +257,6 @@
         "date": "2024-08-09",
         "time": "20:00 - 0:00",
         "description": "An exclusive dinner event gathering industry leaders, designers, and influencers to celebrate the culmination of fashion week.",
-        "mainPicture": "../photos/2.jpg"
+        "mainPicture": "../photos/Official-Dinner.jpg"
     }
 ]
