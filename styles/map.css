@@ -1,10 +1,4 @@
-/* CSS Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-}
+@import url('general.css');
 
 html, body {
     max-width: 1440px;
@@ -37,54 +31,30 @@ a {
 /* TOP BAR */
 
 
-.topbar{
+@import url(general.css);
+nav{
     display: flex;
-    width: 1440px;
-    height: 75px;
-    padding: 3px 19px;
-    justify-content: center;
+    justify-content: space-between;
+    justify-items: center;
     align-items: center;
-    gap: 503px;
-    background: #FFF;
-    /* Topbar-cart */
-    box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.15);
+    padding: 20px 60px;
+    background-color: var(--color-white);
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.15);
 }
 
-
-.topbar_logo{
-    color: var(--Labels-Primary, #000);
-    font-family: "Roboto Condensed";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 80%; /* 25.6px */
-    letter-spacing: -1.28px;
+nav a{
+    text-decoration: none;
+    color: var(--color-black);
 }
 
-.topbar_time{
-    width: 161px;
-    flex-shrink: 0;
-    color: var(--Labels-Primary, #000);
+#nav-date{
     text-align: center;
-    font-family: "Roboto Condensed";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.96px;
 }
 
-.topbar_temperature{
-    color: var(--Labels-Primary, #000);
-    font-family: "Roboto Condensed";
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 80%; /* 28.8px */
-    letter-spacing: -1.44px;
+#nav-time{
+    margin-top: 10px;
+    text-align: center;
 }
-
-
 
 
 
@@ -150,6 +120,28 @@ a {
     top: 70%;
     left: 20%;
 }
+
+.location3 {
+    top: 90%;
+    left: 20%;
+}
+.location4 {
+    top: 70%;
+    left: 40%;
+}
+.location5 {
+    top: 70%;
+    left: 90%;
+}
+.location6 {
+    top: 60%;
+    left: 30%;
+}
+.location7 {
+    top: 30%;
+    left: 30%;
+}
+
 
 
 

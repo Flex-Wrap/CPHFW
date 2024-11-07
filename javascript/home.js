@@ -34,3 +34,8 @@ closeButton.addEventListener('click', () => {
     container.classList.remove('active');
     overlay.classList.remove('active');
 });
+
+//take user to the page after clicking on the designer
+function navigateTo(page){
+    window.location.href = page;
+}

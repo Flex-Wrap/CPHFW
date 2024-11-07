@@ -1,8 +1,29 @@
-.events-card{
+@import url('../general.css');
+.events-card { 
     display: flex;
     flex-direction: column;
     background-color: var(--color-white); 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 40px 30px;
     border-radius: 10px;
+    min-width: 0;
+}
+
+.event-list {
+    display: grid;
+    flex-grow: 1;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.event-card-mini {
+    padding: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.event-card-mini p {
+    word-wrap: break-word;
+    overflow-wrap: break-word; 
+    white-space: normal;
 }

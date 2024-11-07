@@ -4,30 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPHFW</title>
-    <link rel="stylesheet" href="../styles/general.css">
     <link rel="stylesheet" type="text/css" media="screen" href="../styles/map.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="topbar">
-        <h2 class="topbar_logo">CPHFW</h2>
-        <h2 class="topbar_time">Tu 12/8/25 13:00</h2>
-        <h2 class="topbar_temperature">20°C</h2>
-    </div>
+    <nav>
+        <a href="index.html"><h1>CPHFW</h1></a>
+        <div>
+            <p id="nav-date">Tu 12/8/25</p>
+            <p id="nav-time">13:00</p>
+        </div>
+        <h1>20°C</h1>
+    </nav>
   
 
     <div class="map-container">
         <img src="../resources/map.png" alt="map" class="map-image">
     
         <div class="map-icon location1" onclick="showInfo('Royal Danish Theatre', 'Kongens Nytorv 9, 1050 Copenhagen')"></div>
-        <div class="map-icon location2" onclick="showInfo('Location 2', 'Vesterbro 12, 1050 Copenhagen')"></div>
-        <div class="map-icon location3" onclick="showInfo('Location 3', 'Nørrebro 7, 2200 Copenhagen')"></div>
-
+        <div class="map-icon location2" onclick="showInfo('Copenhagen Design Center', 'Vesterbro 12, 1050 Copenhagen')"></div>
+        <div class="map-icon location3" onclick="showInfo('National Gallery of Denmark', 'Nørrebro 7, 2200 Copenhagen')"></div>
+        <div class="map-icon location4" onclick="showInfo('Charlottenborg Palace', 'Nørrebro 7, 2200 Copenhagen')"></div>
+        <div class="map-icon location5" onclick="showInfo('Amalienborg Palace Square', 'Nørrebro 7, 2200 Copenhagen')"></div>
+        <div class="map-icon location6" onclick="showInfo('Copenhagen City Hall', 'Nørrebro 7, 2200 Copenhagen')"></div>
+        <div class="map-icon location7" onclick="showInfo('Royal Danish Library - The Black Diamond', 'Nørrebro 7, 2200 Copenhagen')"></div>
     </div>
 
 
@@ -41,6 +40,9 @@
                 <path d="M12.8 38L10 35.2L21.2 24L10 12.8L12.8 10L24 21.2L35.2 10L38 12.8L26.8 24L38 35.2L35.2 38L24 26.8L12.8 38Z" fill="#202020"/>
             </svg>
         </button>
+        <div id="event-cards" class="event-cards-container">
+            <!-- Event cards will be injected here by JavaScript -->
+        </div>
     </div>
     
     

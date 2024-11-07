@@ -42,3 +42,11 @@ main{
     padding: 30px 60px 40px 60px;
     justify-content: center;
 }
+
+h1{ font: var(--font-style-header); }
+
+h2{ font: var(--font-style-header2); }
+
+h3{ font: var(--font-style-header3); }
+
+p{ font: var(--font-style-body-text); }

@@ -16,10 +16,12 @@ nav a{
 }
 
 #nav-date{
+    font-size: 18px;
     text-align: center;
 }
 
 #nav-time{
+    font-size: 18px;
     margin-top: 10px;
     text-align: center;
 }

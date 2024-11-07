@@ -1,6 +1,9 @@
-@import url('general.css');
+@import url('../general.css');
+@import url('../navbar.css');
 @import url('events-card.css');
 @import url('social_media_card.css');
+@import url('designers-card.css');
+@import url('homemap.css');
 
 .main-container{
     height: 100%;
@@ -40,8 +43,6 @@
 
 /*get our app*/
 .rectangle{
-    width: 315px;
-    height: 340px;
     background-color: var(--color-white);
     border-radius: 10px;
     display: flex;
@@ -73,5 +74,3 @@
     height: 240px;
     object-fit: cover;
 }
-
-
