@@ -52,7 +52,7 @@ if(designerJSON.gallery && designerJSON.gallery.length > 0) {
 });
 
 document.getElementById('previous-button').addEventListener('click', () => {
-    if(currentIndex >1) {
+    if(currentIndex > 0) {
         currentIndex--;
         const previousDesigner = designers[currentIndex];
         updateDesignerPage(previousDesigner);
