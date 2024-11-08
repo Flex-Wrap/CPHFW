@@ -18,7 +18,6 @@
 <main>
     <div class="main-container">
         <div class="top-container">
-<!-- map on the homepage-->
             <div class="map_home" onclick="navigateTo('pages/map.html')">
                 <img src="resources/map.png" class="map_image" alt="map">
                 <img src="resources/icons/pinicon.svg" class="pin_home" style="top: 30%; left: 40%;" alt="Location Pin">
@@ -34,7 +33,7 @@
                 <h1>Events</h1>
                 <p>Events nearby</p>
                 <div class="event-list"></div>
-                <button onclick="navigateTo('pages/events.html')">All Events</button>
+                <button class="primary-button" id="more_events_button">All Events</button>
             </div>
         </div>
         <div class="bottom-container">
@@ -105,8 +104,8 @@
     </div>
     <div id="overlay"></div>
 </main>
-    <script src="javascript/home.js"></script>
-    <script src="designers.js"></script>
-    <script src="each-designer.js"></script>
+    <script type="module" src="javascript/home.js"></script>
+    <script type="module" src="javascript/designers.js"></script>
+    <script type="module" src="javascript/each-designer.js"></script>
 </body>
 </html>

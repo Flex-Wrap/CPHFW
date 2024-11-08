@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    /* Color Variables */
     --color-black: #000000;
     --color-light-black: #202020;
     --color-white: #ffffff;
     --color-orange: #FF5C00;
     --color-grey: #F5F5F5;
 
-    /* Font Style Variables (all using Roboto Condensed directly) */
-    --font-style-header: normal bold 48px/1.2 'Roboto Condensed', sans-serif;  /* Header (48px bold) */
-    --font-style-header2: normal bold 24px/1.3 'Roboto Condensed', sans-serif; /* Header2 (24px bold) */
-    --font-style-header3: normal normal 20px/1.4 'Roboto Condensed', sans-serif; /* Header3 (20px normal) */
-    --font-style-body-text: normal normal 16px/1.5 'Roboto', sans-serif; /* BodyText (16px normal) */
+    --font-style-header: normal bold 48px/1.2 'Roboto Condensed', sans-serif;  
+    --font-style-header2: normal bold 24px/1.3 'Roboto Condensed', sans-serif; 
+    --font-style-header3: normal normal 20px/1.4 'Roboto Condensed', sans-serif; 
+    --font-style-body-text: normal normal 16px/1.5 'Roboto', sans-serif;
 }
 
 *{
@@ -59,7 +57,6 @@ nav{
     padding: 20px 60px;
     background-color: var(--color-white);
     box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.15);
-    margin-bottom: 50px;
     height: 75px;
 }
 
@@ -68,20 +65,14 @@ nav a{
     color: var(--color-black);
 }
 
-#nav-date{
+#nav-date, #nav-time{
     font-size: 18px;
     text-align: center;
 }
 
-#nav-time{
-    font-size: 18px;
-    margin-top: 10px;
-    text-align: center;
-}
-
-button{
+.primary-button{
     background-color: var(--color-orange);
-    width: 114px;
+    min-width: 114px;
     padding: 6px 14px;
     border-radius: 10px;
     color: var(--color-white);

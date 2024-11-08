@@ -1,23 +1,9 @@
-// Fetch the events from the events.json file
-fetch('../resources/events/events.json')
-    .then(response => response.json())  // Parse the JSON data from the file
-    .then(events => {
-        // Get the first 3 events
-        const firstThreeEvents = events.slice(0, 3);
-
-        // Call function to generate event cards
-        generateEventCards(firstThreeEvents);
-    })
-    .catch(error => {
-        console.error("Error loading the events data:", error);
-    });
-
+import { getEvents } from "./data.js"
 const socialButtons = document.querySelectorAll('.social_button');
 const container = document.getElementById('qr-container');
 const overlay = document.getElementById('overlay');
 const closeButton = document.querySelector('.close-button');
 const qrImage = document.querySelector('.QR_body img');
-// added for the app
 const appQRButton = document.getElementById('appQRButton')
 
 // Show the pop up when a social media button is clicked
@@ -49,7 +35,14 @@ closeButton.addEventListener('click', () => {
     overlay.classList.remove('active');
 });
 
+getEvents().then(events => {
+    console.log(events);
+    generateEventCards(events.slice(0,3))});
 //take user to the page after clicking on the designer
+
+getEvents().then(events => {
+    generateEventCards(events.slice(0,3))});
+    
 function navigateTo(page){
     window.location.href = page;
 }
