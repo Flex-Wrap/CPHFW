@@ -29,12 +29,16 @@ function showInfo(locationName, locationAddress) {
                 filteredEvents.forEach(event => {
                     // Create event card container
                     const card = document.createElement("div");
-                    card.classList.add("card");
+                    card.classList.add("mapcard");
 
                     // Create event image element
                     const img = document.createElement("img");
                     img.src = `../resources/events/${event.mainPicture}`;
                     img.alt = event.name;
+
+                    // Create a div to hold the text (h2 and p)
+                    const textLayoutDiv = document.createElement("div");
+                    textLayoutDiv.classList.add("textlayout");
 
                     // Create event name element
                     const name = document.createElement("h2");
@@ -47,11 +51,14 @@ function showInfo(locationName, locationAddress) {
                     const time = document.createElement("p");
                     time.textContent = `${event.time}`;
 
-                    // Append event details to the card
+                    // Append h2 and p elements to the text layout div
+                    textLayoutDiv.appendChild(name);
+                    textLayoutDiv.appendChild(date);
+                    textLayoutDiv.appendChild(time);
+
+                    // Append the image and text layout div to the card
                     card.appendChild(img);
-                    card.appendChild(name);
-                    card.appendChild(date);
-                    card.appendChild(time);
+                    card.appendChild(textLayoutDiv);
 
                     // Append the card to the events list in the info box
                     eventCardsContainer.appendChild(card);

@@ -1,47 +1,27 @@
 @import url('../general.css');
-@import url('../navbar.css');
 @import url('events-card.css');
 @import url('social_media_card.css');
 @import url('designers-card.css');
 @import url('homemap.css');
 
-.main-container{
-    height: 100%;
+.main-container, .top-container, .bottom-container {
     display: grid;
-    grid-template-rows: 3fr 2fr;
+    height: 100%;
     gap: 20px;
 }
 
-.top-container {
-    display: grid;
-    grid-template-columns: 5fr 7fr; /* 4/12 and 8/12 */
-    height: 100%;
+.main-container{ 
+    grid-template-rows: 3fr 2fr; 
 }
 
-.left-top{
-    background-color: blue;
-    height: 100%;
+.top-container {
+    grid-template-columns: 5fr 7fr;
 }
 
 .bottom-container {
-    display: grid;
-    grid-template-columns: 6fr 3fr 3fr; /* 6/12 and 3/12 for the rest */
-    height: 100%;
+    grid-template-columns: 6fr 3fr 3fr;
 }
 
-.left-bottom, .middle-bottom, .right-bottom {
-    background-color: green; /* Light grey background for visualization */
-    padding: 20px;
-    height: 100%; /* Fill the entire height */
-}
-
-/* Optional styling to see the grid lines */
-.top-container, .bottom-container {
-    gap: 20px; /* Space between columns */
-}
-
-
-/*get our app*/
 .rectangle{
     background-color: var(--color-white);
     border-radius: 10px;
