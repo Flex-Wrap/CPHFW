@@ -181,6 +181,7 @@ nav a{
     flex-direction: column;
     align-items: flex-start;
     flex-shrink: 0;
+    margin-bottom: 24px;
 }
 
 
@@ -228,21 +229,32 @@ nav a{
 
 /* Cards styling */
 .mapcard {
-    width: 427px;
-    height: 465px;
-    padding: 0;
-    border-radius: 10px;
-    box-shadow: 0 0.1px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    background-color: white;
+    display: flex;
+    width: 430px;
+    height: 330px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--blur, 10px);
+}
+
+
+.textlayout{
+    display: flex;
+    position: absolute;
+    width: 360px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 123px;
+    margin: 15px 17px;
+
 }
 
 .mapcard img {
     width: 100%;
-    height: 392px;
-    border-radius: 10px 10px 0 0;
+    height: 100%;
     object-fit: cover;
-    object-position: top;
+    filter: brightness(70%);
+    
 }
 
 .mapcard h2 {
@@ -254,6 +266,9 @@ nav a{
     font-weight: 800;
     line-height: normal;
     text-transform: uppercase;
+
+    height: 150px;
+    align-self: stretch;
 }
 
 .mapcard p {
@@ -282,3 +297,8 @@ nav a{
     border-radius: var(--blur, 10px);
     background: #FFF;
 }
+
+
+
+
+
