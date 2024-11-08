@@ -88,3 +88,15 @@ function closeInfoBoxButton(event) {
     // Remove the event listener after closing the info box
     document.removeEventListener('click', closeInfoBox);
 }
+
+
+
+
+
+
+
+// Select the button element and add a click event listener
+document.querySelector('.back-map-button').addEventListener('click', () => {
+    window.location.href = 'index.html';
+  });
+  
