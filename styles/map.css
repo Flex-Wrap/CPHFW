@@ -69,8 +69,6 @@ nav a{
     max-height: 1024px;
     height: auto;      /* Allows height to scale with width */
     overflow: hidden;
-    margin-top: -50px;
-
 }
 
 .map-image {
