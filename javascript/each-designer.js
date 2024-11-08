@@ -56,30 +56,6 @@ if(designerJSON.gallery && designerJSON.gallery.length > 0) {
 }
 });
 
-// Show the pop up when a social media button is clicked
-socialButtons.forEach(button => {
-    button.addEventListener('click', (event) => {
-        container.classList.add('active');
-        overlay.classList.add('active');
-
-        const platform = event.target.alt;
-        const qrCodeSrc = button.getAttribute("data-qr");
-
-        container.querySelector('.title').textContent = platform.charAt(0).toUpperCase() + platform.slice(1);
-        qrImage.src = qrCodeSrc;
-    });
-});
-
-// Close the pop up when the close button is clicked
-closeButton.addEventListener('click', () => {
-    currentIndex++;
-    console.log(currentIndex);
-    const designer = designers[currentIndex]
-    const designerString = encodeURIComponent(JSON.stringify(designer));
-    window.location.href = `/pages/each-designer.html?data=${designerString}`;
-});
-
-
 document.getElementById('previous-button').addEventListener('click', () => {
     if(currentIndex >1) {
         currentIndex--;
@@ -118,11 +94,4 @@ document.getElementById('next-button').addEventListener('click', () => {
     // Update the URL with the new designer
     const designerString = encodeURIComponent(JSON.stringify(newDesigner));
     window.history.pushState({}, "", `?data=${designerString}`);
-}
-
-
-function goToDesigner(id) {
-    const designer = designers[id]
-    const designerString = encodeURIComponent(JSON.stringify(designer));
-    window.location.href = `/pages/each-designer.html?data=${designerString}`;
 }
