@@ -4,7 +4,20 @@ const container = document.getElementById('qr-container');
 const overlay = document.getElementById('overlay');
 const closeButton = document.querySelector('.close-button');
 const qrImage = document.querySelector('.QR_body img');
-const appQRButton = document.getElementById('appQRButton')
+const appQRButton = document.getElementById('appQRButton');
+
+// Select elements and add event listeners
+document.querySelector('.map_home').addEventListener('click', () => navigateTo('pages/map.html'));
+document.querySelector('.see_full_map_button').addEventListener('click', () => navigateTo('pages/map.html'));
+document.getElementById('all_events_button').addEventListener('click', () => navigateTo('pages/events.html'));
+document.getElementById('see_all_button').addEventListener('click', () => navigateTo('pages/designers.html'));
+
+let designerIndex = [1,4,3,11,10];
+
+document.querySelectorAll('.each_designer').forEach((element, index) => {
+    element.addEventListener('click', () => goToDesigner(designerIndex[index])); // Use actual IDs as needed
+});
+
 
 // Show the pop up when a social media button is clicked
 socialButtons.forEach(button => {
