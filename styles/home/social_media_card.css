@@ -36,6 +36,8 @@
     outline: none;
     width: 68px; 
     height: 68px; 
+    background: none;
+    box-shadow: none;
 }
 
 
@@ -92,6 +94,8 @@
     top: 68px;
     left: 48px;
     padding: 5px;
+    background: none;
+    box-shadow: none;
 }
 
 .QR_body{
