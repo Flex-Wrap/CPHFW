@@ -8,6 +8,31 @@ body {
      background-color: #f5f5f5;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.back-to-top {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    background-color: var(--color-orange);
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+    opacity: 0.7;
+}
+
+body:has(.back-to-top) .back-to-top {
+    display: block;
+}
 
 .title-container {
     display: flex;
