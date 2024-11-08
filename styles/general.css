@@ -73,6 +73,7 @@ nav a{
 .primary-button{
     background-color: var(--color-orange);
     min-width: 114px;
+    width: auto;
     padding: 6px 14px;
     border-radius: 10px;
     color: var(--color-white);
