@@ -218,8 +218,6 @@ nav a{
     cursor: pointer;
     width: 48px;
     height: 48px;
-    box-shadow: none; /* Remove any shadow */
-    border-radius: 0; /* Reset curved edges */
 }
 
 
