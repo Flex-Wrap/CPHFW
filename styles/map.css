@@ -210,3 +210,21 @@ nav a{
     width: 48px;
     height: 48px;
 }
+
+
+
+
+
+.back-map-button{
+    position: absolute;
+    top: 115px;
+    left: 64px;
+    cursor: pointer;
+    z-index: 12;
+    display: inline-flex;
+    padding: var(--blur, 10px);
+    align-items: center;
+    gap: var(--blur, 10px);
+    border-radius: var(--blur, 10px);
+    background: #FFF;
+}

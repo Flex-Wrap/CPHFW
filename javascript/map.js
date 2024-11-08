@@ -38,14 +38,14 @@ function showInfo(locationName, locationAddress) {
 
                     // Create event name element
                     const name = document.createElement("h2");
-                    name.textContent = event.name;
+                    name.textContent = `${event.eventname}`;
 
                     // Create event date and time elements
                     const date = document.createElement("p");
-                    date.textContent = `Date: ${event.date}`;
+                    date.textContent = `${event.date}`;
 
                     const time = document.createElement("p");
-                    time.textContent = `Time: ${event.time}`;
+                    time.textContent = `${event.time}`;
 
                     // Append event details to the card
                     card.appendChild(img);
@@ -88,3 +88,11 @@ function closeInfoBoxButton(event) {
     // Remove the event listener after closing the info box
     document.removeEventListener('click', closeInfoBox);
 }
+
+
+
+
+
+
+  
+  
