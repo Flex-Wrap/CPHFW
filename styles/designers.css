@@ -69,7 +69,6 @@ body:has(.back-to-top) .back-to-top {
     font-size: 48px;
     text-align: center;
     margin: 0;
-    flex: 1;
     position: absolute;
     left: 50%; /* Centers title horizontally */
     transform: translateX(-50%); /* Offset by 50% of its width */

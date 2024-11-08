@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../styles/designers.css">
     <link rel="stylesheet" href="../styles/navbar.css">
     <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/home/main.css">
 </head>
 <body>
     <nav>
@@ -32,12 +33,32 @@
                 <h2>ABOUT</h2>
                 <p id="designer-bio"></p>
                 <div class="social-media-icons">
-                    <img src="../resources/images/instagram.png" alt="Instagram">
-                    <img src="../resources/images/twitter.png" alt="X">
-                    <img src="../resources/images/tiktok.png" alt="Tik-Tok">
-                    <img src="../resources/images/youtube.png" alt="Youtube">
+                    <button class="social_button" data-qr="../resources/images/instagramQR.png">
+                        <img src="../resources/images/instagram.png" alt="Instagram">
+                    </button>
+                    <button class="social_button" data-qr="../resources/images/twitterQR.png">
+                        <img src="../resources/images/twitter.png" alt="X">
+                    </button>
+                    <button class="social_button" data-qr="../resources/images/tiktokQR.png">
+                        <img src="../resources/images/tiktok.png" alt="Tik-Tok">
+                    </button>
+                    <button class="social_button" data-qr="../resources/images/youtubeQR.png">
+                        <img src="../resources/images/youtube.png" alt="Youtube">
+                    </button>
                 </div>
             </div>
+            <div class="qr-container" id="qr-container">
+                <div class="QR_header">
+                    <button class="close-button">
+                        <a href="designers.html"><div class="back-button">&larr; BACK</div></a>
+                    </button>
+                    <div class="title">INSTAGRAM</div>
+                </div>
+                <div class="QR_body">
+                    <img src="resources/images/instagramQR.png" alt="QR code instagram">
+                </div>
+            </div>
+            <div id="overlay"></div>
         </section>
         <section class="gallery">
             <h2>SS25 RUNWAY</h2>
@@ -45,6 +66,6 @@
         </section>
     </main>
 
-    <script src="../each-designer.js"></script>
+    <script src="../javascript/each-designer.js"></script>
 </body>
 </html>

@@ -1,5 +1,10 @@
 let designers = []; // Global variable to store designers
-let currentIndex = -1; // Global variable for current designer's index
+let currentIndex = 0; // Global variable for current designer's index
+const socialButtons = document.querySelectorAll('.social_button');
+const container = document.getElementById('qr-container');
+const overlay = document.getElementById('overlay');
+const closeButton = document.querySelector('.close-button');
+const qrImage = container.querySelector('.QR_body img');
 
 function formatText(inputText) {
     if (inputText.length <= 300) return inputText; 
@@ -27,8 +32,8 @@ const designerJSON = JSON.parse(decodeURIComponent(designer));
 
 designers = JSON.parse(localStorage.getItem("designers"));
 
-console.log(designerJSON);
 currentIndex = designers.findIndex(d => d.id === designerJSON.id);
+console.log("Current index:" + currentIndex);
 
 document.title = designerJSON.name; //sets the title of the page depending on the designer name
 
@@ -50,6 +55,30 @@ if(designerJSON.gallery && designerJSON.gallery.length > 0) {
 
 }
 });
+
+// Show the pop up when a social media button is clicked
+socialButtons.forEach(button => {
+    button.addEventListener('click', (event) => {
+        container.classList.add('active');
+        overlay.classList.add('active');
+
+        const platform = event.target.alt;
+        const qrCodeSrc = button.getAttribute("data-qr");
+
+        container.querySelector('.title').textContent = platform.charAt(0).toUpperCase() + platform.slice(1);
+        qrImage.src = qrCodeSrc;
+    });
+});
+
+// Close the pop up when the close button is clicked
+closeButton.addEventListener('click', () => {
+    currentIndex++;
+    console.log(currentIndex);
+    const designer = designers[currentIndex]
+    const designerString = encodeURIComponent(JSON.stringify(designer));
+    window.location.href = `/pages/each-designer.html?data=${designerString}`;
+});
+
 
 document.getElementById('previous-button').addEventListener('click', () => {
     if(currentIndex >1) {
@@ -89,4 +118,11 @@ document.getElementById('next-button').addEventListener('click', () => {
     // Update the URL with the new designer
     const designerString = encodeURIComponent(JSON.stringify(newDesigner));
     window.history.pushState({}, "", `?data=${designerString}`);
+}
+
+
+function goToDesigner(id) {
+    const designer = designers[id]
+    const designerString = encodeURIComponent(JSON.stringify(designer));
+    window.location.href = `/pages/each-designer.html?data=${designerString}`;
 }
