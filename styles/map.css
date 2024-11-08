@@ -69,8 +69,6 @@ nav a{
     max-height: 1024px;
     height: auto;      /* Allows height to scale with width */
     overflow: hidden;
-    margin-top: -50px;
-
 }
 
 .map-image {
@@ -215,12 +213,15 @@ nav a{
     position: absolute;
     top: 20px;
     right: 20px;
-    background-color: #ffffff; /* Red background */
-    border: none;
+    background-color: #ffffff; /* White background */
+    border: none; /* No border */
     cursor: pointer;
     width: 48px;
     height: 48px;
+    background: none;
+    box-shadow: none;
 }
+
 
 .event-cards-container{
     display: flex;

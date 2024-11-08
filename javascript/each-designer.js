@@ -1,5 +1,5 @@
 let designers = []; // Global variable to store designers
-let currentIndex = 0; // Global variable for current designer's index
+let currentIndex = -1; // Global variable for current designer's index
 const socialButtons = document.querySelectorAll('.social_button');
 const container = document.getElementById('qr-container');
 const overlay = document.getElementById('overlay');
