@@ -29,7 +29,7 @@ function showInfo(locationName, locationAddress) {
                 filteredEvents.forEach(event => {
                     // Create event card container
                     const card = document.createElement("div");
-                    card.classList.add("card");
+                    card.classList.add("mapcard");
 
                     // Create event image element
                     const img = document.createElement("img");

@@ -167,10 +167,17 @@ nav a{
     background: #FFF;
 }
 
+.infobox-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
 
 .info-box-name{
     display: flex;
-    width: 500px;
+    width: 1000px;
     flex-direction: column;
     align-items: flex-start;
     flex-shrink: 0;
@@ -186,6 +193,7 @@ nav a{
     font-weight: 800;
     line-height: normal;
     text-transform: uppercase;
+
 }
 
 #location-details {
@@ -211,8 +219,54 @@ nav a{
     height: 48px;
 }
 
+.event-cards-container{
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    align-self: stretch;
+}
 
+/* Cards styling */
+.mapcard {
+    width: 427px;
+    height: 465px;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 0 0.1px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: white;
+}
 
+.mapcard img {
+    width: 100%;
+    height: 392px;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    object-position: top;
+}
+
+.mapcard h2 {
+    color: #FFF;
+    /* HEADER 1 */
+    font-family: "Roboto Condensed";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.mapcard p {
+    color: #FFF;
+
+    /* header 2 */
+    font-family: "Roboto Condensed";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
 
 
 .back-map-button{
