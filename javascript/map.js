@@ -95,8 +95,9 @@ function closeInfoBoxButton(event) {
 
 
 
-// Select the button element and add a click event listener
+// Redirect to the root level index.html
 document.querySelector('.back-map-button').addEventListener('click', () => {
-    window.location.href = 'index.html';
+    window.location.href = '../index.html';
   });
+  
   
