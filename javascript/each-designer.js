@@ -1,10 +1,5 @@
 let designers = []; // Global variable to store designers
 let currentIndex = -1; // Global variable for current designer's index
-const socialButtons = document.querySelectorAll('.social_button');
-const container = document.getElementById('qr-container');
-const overlay = document.getElementById('overlay');
-const closeButton = document.querySelector('.close-button');
-const qrImage = container.querySelector('.QR_body img');
 
 function formatText(inputText) {
     if (inputText.length <= 300) return inputText; 

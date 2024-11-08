@@ -1,5 +1,5 @@
 @import url(../styles/general.css);
-@import url(../styles/home/homemap.css);
+@import url(../styles/home.css);
 
 html {
     scroll-behavior: smooth;
