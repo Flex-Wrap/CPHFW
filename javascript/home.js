@@ -36,13 +36,9 @@ closeButton.addEventListener('click', () => {
 });
 
 getEvents().then(events => {
-    console.log(events);
-    generateEventCards(events.slice(0,3))});
-//take user to the page after clicking on the designer
-
-getEvents().then(events => {
     generateEventCards(events.slice(0,3))});
     
+//take user to the page after clicking on the designer
 function navigateTo(page){
     window.location.href = page;
 }
