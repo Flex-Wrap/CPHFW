@@ -13,6 +13,19 @@
     padding: 10px;
 }
 
+.events-card button {
+    background-color: var(--color-orange);
+    width: 114px;
+    padding: 6px 14px;
+    border-radius: 10px;
+    color: var(--color-white);
+    border: 0;
+    box-shadow: 0 0.1px 10px rgba(0, 0, 0, 0.2);
+    font-family: "Robotot", sans-serif;
+    font-weight: 500;
+    align-self: center;
+}
+
 .event-list {
     display: grid;
     flex-grow: 1;
