@@ -15,8 +15,8 @@ html {
 .back-to-top {
     display: none; /* Hidden by default */
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 0;
+    right: 60px;
     z-index: 99;
     border: none;
     background-color: var(--color-orange);
@@ -112,8 +112,9 @@ body:has(.back-to-top) .back-to-top {
     box-shadow: 0 0 0 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 34px;
-    justify-content: center;
+    gap: 35px;
+    justify-content: start;
+    align-items: center;
     overflow-x: auto;
 }
 
