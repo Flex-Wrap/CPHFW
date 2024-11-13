@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPHFW</title>
+    <link rel="stylesheet" href="../styles/home/main.css">
+</head>
+<body>
+    <nav>
+        <a href="home.html"><h1>CPHFW</h1></a>
+        <div>
+            <p id="nav-date">Tu 12/8/25</p>
+            <p id="nav-time">13:00</p>
+        </div>
+        <h1>20°C</h1>
+    </nav>
+<main>
+    <div class="main-container">
+        <div class="top-container">
+            <div class="map_home">
+                <img src="../resources/map.png" class="map_image" alt="map">
+                <img src="../resources/icons/pinicon.svg" class="pin_home" style="top: 30%; left: 40%;" alt="Location Pin">
+                <img src="../resources/icons/pinicon.svg" class="pin_home" style="top: 40%; left: 55%;" alt="Location Pin">
+                <img src="../resources/icons/pinicon.svg" class="pin_home" style="top: 50%; left: 65%;" alt="Location Pin">
+                <img src="../resources/icons/pinicon.svg" class="pin_home" style="top: 60%; left: 35%;" alt="Location Pin">
+                <img src="../resources/icons/pinicon.svg" class="pin_home" style="top: 70%; left: 75%;" alt="Location Pin">
+                <button class="see_full_map_button">See full map</button><!--put the page-->
+
+            </div>
+            
+            <div class="events-card">
+                <h1>Events</h1>
+                <p>Events nearby</p>
+                <div class="event-list"></div>
+                <button id="all_events_button" class="primary-button">All Events</button>
+            </div>
+        </div>
+        <div class="bottom-container">
+
+            <div class="designers_card">
+                <h1>DESIGNERS</h1>
+                <div class="designers_cards">
+                    <div class="each_designer"><!--put the page-->
+                        <div class="image_mask" style="background-image: url(../resources/designericons/division.jpg); background-size: 400%; background-position: 70% 30%;" ></div>
+                        <h2>(DI)VISION</h2>
+                    </div>
+                    <div class="each_designer"><!--put the page-->
+                        <div class="image_mask" style="background-image: url(../resources/designericons/alectra.jpg); background-size: 200%; background-position: 50% -2%;"></div>
+                        <h2>ALECTRA</h2>
+                    </div>
+                    <div class="each_designer"><!--put the page-->
+                        <div class="image_mask" style="background-image: url(../resources/designericons/aiayu.jpg); background-size: 400%; background-position: 70% 40%;"></div>
+                        <h2>AIAYU</h2>
+                    </div>
+                    <div class="each_designer"><!--put the page-->
+                        <div class="image_mask" style="background-image: url(../resources/designericons/chaos.jpg); background-size: 150%; background-position: 50% 10%;"></div>
+                        <h2>CHAOS</h2>
+                    </div>
+                    <div class="each_designer"><!--put the page-->
+                        <div class="image_mask" style="background-image: url(../resources/designericons/deadwood.jpg); background-size: 120%; background-position: 50% 100%;"></div>
+                        <h2>DEADWOOD</h2>
+                    </div>
+                </div>
+                <button class="primary-button" id="see_all_button"><!--put the page-->See all</button>
+            </div>
+
+            <div class="social_media_card">
+                <h1>SOCIAL MEDIA</h1>
+                <div class="group_parent">
+                    <button class="social_button" data-qr="../resources/images/instagramQR.png">
+                        <img src="../resources/images/instagram.png" alt="instagram">
+                    </button>
+                    <button class="social_button" data-qr="../resources/images/tiktokQR.png">
+                        <img src="../resources/images/tiktok.png" alt="tiktok">
+                    </button>
+                    <button class="social_button" data-qr="../resources/images/twitterQR.png">
+                        <img src="../resources/images/twitter.png" alt="twitter">
+                    </button>
+                    <button class="social_button" data-qr="../resources/images/youtubeQR.png">
+                        <img src="../resources/images/youtube.png" alt="youtube">
+                    </button>
+                </div>
+                <h2>CLICK AND SCAN</h2>
+                </div>
+        
+           
+                <div class="rectangle">
+                    <div class="main_text">GET OUR APP</div>
+                    <button id="appQRButton" class="QR_code" data-qr="../resources/images/appQR.png"><img src="../resources/images/appQR.png" alt="CPHFW APP"></button>
+                </div>
+        </div>
+    </div>
+    <div class="qr-container" id="qr-container">
+        <div class="QR_header">
+            <button class="close-button">
+                <img src="../resources/images/arrow-back.png" alt="back button">
+            </button>
+            <div class="title">INSTAGRAM</div>
+        </div>
+        <div class="QR_body">
+            <img src="../resources/images/instagramQR.png" alt="QR code instagram">
+        </div>
+    </div>
+    <div id="overlay"></div>
+</main>
+    <script type="module" src="../javascript/home.js"></script>
+    <script type="module" src="../javascript/designers.js"></script>
+    <script type="module" src="../javascript/each-designer.js"></script>
+</body>
+</html>

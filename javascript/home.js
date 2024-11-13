@@ -7,10 +7,10 @@ const qrImage = document.querySelector('.QR_body img');
 const appQRButton = document.getElementById('appQRButton');
 
 // Select elements and add event listeners
-document.querySelector('.map_home').addEventListener('click', () => navigateTo('pages/map.html'));
-document.querySelector('.see_full_map_button').addEventListener('click', () => navigateTo('pages/map.html'));
-document.getElementById('all_events_button').addEventListener('click', () => navigateTo('pages/events.html'));
-document.getElementById('see_all_button').addEventListener('click', () => navigateTo('pages/designers.html'));
+document.querySelector('.map_home').addEventListener('click', () => navigateTo('../pages/map.html'));
+document.querySelector('.see_full_map_button').addEventListener('click', () => navigateTo('../pages/map.html'));
+document.getElementById('all_events_button').addEventListener('click', () => navigateTo('../pages/events.html'));
+document.getElementById('see_all_button').addEventListener('click', () => navigateTo('../pages/designers.html'));
 
 let designerIndex = [1,4,3,11,10];
 
@@ -82,5 +82,5 @@ function generateEventCards(events) {
 function goToDesigner(id) {
     const designer = designers.find(d => d.id === id);
     const designerString = encodeURIComponent(JSON.stringify(designer));
-    window.location.href = `/pages/each-designer.html?data=${designerString}`;
+    window.location.href = `../pages/each-designer.html?data=${designerString}`;
 }

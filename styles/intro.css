@@ -1,0 +1,50 @@
+@import url('general.css');
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-grey);
+    color: var(--color-light-black);
+    font-family: Arial, sans-serif;
+}
+
+.loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#name {
+    font-size: 64px;
+    overflow: hidden; 
+    white-space: nowrap; 
+    border-right: 3px solid var(--color-light-black);
+    ;
+
+    animation-name: typing, blink, fadeOut;
+    animation-duration: 3s, 0.5s, 1s;
+    animation-timing-function: steps(30), step-end, ease;
+    animation-delay: 0s, 0s, 3s;
+    animation-iteration-count: 1, infinite, 1;
+    animation-direction: normal, alternate, normal;
+    animation-fill-mode: forwards, forwards, forwards;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Blinking cursor */
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/* Fade-out effect */
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
