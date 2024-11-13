@@ -26,11 +26,8 @@ document.addEventListener("DOMContentLoaded", () => { // when the webpage is rea
                 // Put the image and the name inside the card div
                 card.appendChild(img); 
                 card.appendChild(name);
-
-                // Create a link to the designer's detail page (each-designer.html) using their unique ID
-                const designerString = encodeURIComponent(JSON.stringify(designer)); // Encode designer data as a string
                 const link = document.createElement('a');
-                link.href = `each-designer.html?data=${designerString}`; // Use the encoded designer string in the URL
+                link.href = `each-designer.html?data=${designer.id}`; // Use the encoded designer string in the URL
                 link.appendChild(card);  // Make the entire card clickable
 
                 designerCards.appendChild(link); // Append the card link to the designerCards container
