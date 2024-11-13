@@ -1,12 +1,6 @@
 @import url('general.css');
 
-html, body {
-    max-width: 1440px;
-    max-height: 1024px;
-    font-size: 100%;
-    font-family: sans-serif;
-    line-height: 1;
-}
+
 
 img, picture, video, canvas, svg {
     display: block;
@@ -32,29 +26,6 @@ a {
 
 
 @import url(general.css);
-nav{
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
-    align-items: center;
-    padding: 20px 60px;
-    background-color: var(--color-white);
-    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.15);
-}
-
-nav a{
-    text-decoration: none;
-    color: var(--color-black);
-}
-
-#nav-date{
-    text-align: center;
-}
-
-#nav-time{
-    margin-top: 10px;
-    text-align: center;
-}
 
 
 
@@ -152,7 +123,6 @@ nav a{
     display: none; /* Hidden by default */
     position: fixed;
     bottom: 0;
-    left: 0;
     width: 100%;
     max-width: 1440px;  /* Ensures it doesn’t exceed 1440px */
     height: 50%; /* Takes up half of the page */
@@ -160,7 +130,6 @@ nav a{
     padding: 30px;
     box-sizing: border-box;
     overflow-y: auto;
-    font-family: Arial, sans-serif;
     z-index: 1; /* Ensure the info box is above the map */
     border-top: 2px solid #ccc; /* Optional: Adds a border between the map and info box */
     border-radius: var(--blur, 10px) var(--blur, 10px) 0px 0px;
@@ -290,7 +259,7 @@ nav a{
 .back-map-button{
     position: absolute;
     top: 115px;
-    left: 64px;
+    margin-left: 50px;
     cursor: pointer;
     z-index: 12;
     display: inline-flex;

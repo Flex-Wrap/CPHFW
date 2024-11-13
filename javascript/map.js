@@ -79,9 +79,9 @@ function closeInfoBox(event) {
     const closeBtn = document.getElementById('close-btn');
 
     // Close the box only if the click was outside the info box or close button
-    if (!infoBox.contains(event.target) && event.target !== closeBtn) {
+    if (event.target.classList.contains('map-image')) {
         infoBox.style.display = 'none';
-        document.removeEventListener('click', closeInfoBox); // Remove the click listener
+        document.removeEventListener('click', closeInfoBox);
     }
 }
 
@@ -96,10 +96,19 @@ function closeInfoBoxButton(event) {
     document.removeEventListener('click', closeInfoBox);
 }
 
+document.querySelectorAll('.map-image').forEach((element) => {
+    element.addEventListener('click', closeInfoBox);
+});
 
 
 
 
 
-  
+
+
+
+
+
+
+
   
