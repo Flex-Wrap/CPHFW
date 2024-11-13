@@ -1,5 +1,29 @@
-// Function to show the info box with events filtered by location
-function showInfo(locationName, locationAddress) {
+let currentSelectedId = "";  // Global variable to store the currently selected ID
+
+// Function to switch background color of map icons
+function switchElementColors(id, className = 'selected') {
+    // Check if the element exists before accessing its classList
+    const element = document.getElementById(id);
+    if (!element) {
+        console.error(`Element with id "${id}" not found!`);
+        return;  // Exit early if the element does not exist
+    }
+
+    // Remove the selected class from the previously selected element
+    if (currentSelectedId) {
+        const previousElement = document.getElementById(currentSelectedId);
+        if (previousElement) {
+            previousElement.classList.remove(className);
+        }
+    }
+
+    // Set the new currentSelectedId to the clicked icon and add the class
+    currentSelectedId = id;
+    element.classList.add(className);
+}
+
+// Function to show event information
+function showInfo(id, locationName, locationAddress) {
     const infoBox = document.getElementById('info-box');
     const locationNameElement = document.getElementById('location-name');
     const locationDetailsElement = document.getElementById('location-details');
@@ -71,12 +95,14 @@ function showInfo(locationName, locationAddress) {
     setTimeout(() => {
         document.addEventListener('click', closeInfoBox);
     }, 10);
+
+    // Switch the colors for the clicked element
+    switchElementColors(id);  // This should now work
 }
 
 // Function to close the info box when clicking outside
 function closeInfoBox(event) {
     const infoBox = document.getElementById('info-box');
-    const closeBtn = document.getElementById('close-btn');
 
     // Close the box only if the click was outside the info box or close button
     if (event.target.classList.contains('map-image')) {

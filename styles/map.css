@@ -56,6 +56,7 @@ a {
     cursor: pointer;
     transform: translate(-50%, -50%);
     background-color: transparent; /* Ensure background is transparent */
+    background: url('/resources/icons/pinicon.svg');
 }
 
 /* SVG icon styling */
@@ -64,15 +65,22 @@ a {
     display: block;
     width: 100%;
     height: 100%;
-    background: url('/resources/icons/pinicon.svg'); /* Adjust the path as needed */
+    
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+/* Změna stylu pro vybranou ikonu */
+
+.map-icon.selected {
+    background: url('/resources/icons/piniconactive.svg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.map-icon.selected {
-    background-color: black;
-}
 
 
 
@@ -81,6 +89,9 @@ a {
     top: 30%;
     left: 40%;
 }
+
+
+
 
 .location2 {
     top: 50%;
