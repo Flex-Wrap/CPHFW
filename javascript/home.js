@@ -80,7 +80,5 @@ function generateEventCards(events) {
 }
 
 function goToDesigner(id) {
-    const designer = designers.find(d => d.id === id);
-    const designerString = encodeURIComponent(JSON.stringify(designer));
-    window.location.href = `../pages/each-designer.html?data=${designerString}`;
+    window.location.href = `../pages/each-designer.html?data=${id}`;
 }

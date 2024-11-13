@@ -1,17 +1,16 @@
-document.addEventListener("DOMContentLoaded", () => { // when the webpage is ready, tun the code inside the curly brackets
-    fetch("../resources/designers/designers.json") //gets data from the JSON file
-        .then(response => response.json()) //converts data from JSON to JS objects
-        .then(designersData => {
-            localStorage.setItem("designers", JSON.stringify(designersData));
+import { getDesigners } from "./data.js"; // Import the getDesigners function
 
+document.addEventListener("DOMContentLoaded", () => { // when the webpage is ready, run the code inside the curly brackets
+    getDesigners() // Calls getDesigners to fetch the designers data
+        .then(designersData => {
             const designerCards = document.getElementById("designer-cards");
 
             designersData.forEach(designer => {
                 // Create card container
                 const card = document.createElement("div");
-                card.classList.add("card"); //adds a class to the HTML element created
+                card.classList.add("card"); // Add a class to the HTML element created
 
-                //Add ID with the first letter of designer's name
+                // Add ID with the first letter of the designer's name
                 const firstLetter = designer.name.charAt(0).toUpperCase();
                 card.id = `letter-${firstLetter}`;
 
@@ -28,19 +27,16 @@ document.addEventListener("DOMContentLoaded", () => { // when the webpage is rea
                 card.appendChild(img); 
                 card.appendChild(name);
 
-                // Put the card inside the designerCards div
-               // designerCards.appendChild(card);
-
-                // Create a link to the designer's detail page (designer.html) using their unique ID
-                const designerString = encodeURIComponent(JSON.stringify(designer));
+                // Create a link to the designer's detail page (each-designer.html) using their unique ID
+                const designerString = encodeURIComponent(JSON.stringify(designer)); // Encode designer data as a string
                 const link = document.createElement('a');
-                link.href = `each-designer.html?data=${designerString}`;  // Add the designer's ID as a query parameter
+                link.href = `each-designer.html?data=${designerString}`; // Use the encoded designer string in the URL
                 link.appendChild(card);  // Make the entire card clickable
 
-                designerCards.appendChild(link);
+                designerCards.appendChild(link); // Append the card link to the designerCards container
             });
         })
-        .catch(error => console.error("Error loading designer data:", error));
+        .catch(error => console.error("Error loading designer data:", error)); // Handle errors
 });
 
 document.addEventListener("DOMContentLoaded", () => {
