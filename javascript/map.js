@@ -68,6 +68,9 @@ function showInfo(id, locationName, locationAddress) {
                     const name = document.createElement("h2");
                     name.textContent = `${event.eventname}`;
 
+                    const playout = document.createElement("div");
+                    playout.classList.add("playout");
+
                     // Create event date and time elements
                     const date = document.createElement("p");
                     date.textContent = `${event.date}`;
@@ -77,8 +80,10 @@ function showInfo(id, locationName, locationAddress) {
 
                     // Append h2 and p elements to the text layout div
                     textLayoutDiv.appendChild(name);
-                    textLayoutDiv.appendChild(date);
-                    textLayoutDiv.appendChild(time);
+                    playout.appendChild(date);
+                    playout.appendChild(time);
+
+                    textLayoutDiv.appendChild(playout);
 
                     // Append the image and text layout div to the card
                     card.appendChild(img);
