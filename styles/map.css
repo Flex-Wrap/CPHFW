@@ -140,7 +140,6 @@ a {
     background-color: white; /* White background for the info box */
     padding: 30px;
     box-sizing: border-box;
-    overflow-y: auto;
     z-index: 1; /* Ensure the info box is above the map */
     border-top: 2px solid #ccc; /* Optional: Adds a border between the map and info box */
     border-radius: var(--blur, 10px) var(--blur, 10px) 0px 0px;
@@ -152,6 +151,7 @@ a {
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
+    height: 100%;
 }
 
 
@@ -205,20 +205,29 @@ a {
 
 .event-cards-container{
     display: flex;
-    align-items: center;
+    flex-wrap: nowrap; /* Ensures cards don't wrap to the next line */
+    overflow-x: auto;  /* Allows horizontal scrolling */
     gap: 23px;
-    align-self: stretch;
+    width: 100%;  /* Ensures the container doesn't exceed the info-box width */
+    max-width: 1410px; /* Optional: limit the height of the cards container */
+    padding-right: 10px; 
+}
+
+.event-cards-container::-webkit-scrollbar {
+    display: none;  /* Skryje scrollbar */
 }
 
 /* Cards styling */
 .mapcard {
     display: flex;
-    width: 430px;
+    min-width: 430px;
+    position: relative;
     height: 330px;
     flex-direction: column;
     align-items: flex-start;
     gap: var(--blur, 10px);
     cursor: pointer;
+    overflow: hidden;
 }
 
 
@@ -230,6 +239,7 @@ a {
     align-items: flex-start;
     gap: 80px;
     margin: 15px 17px;
+    z-index: 1;
 
 }
 
@@ -289,5 +299,13 @@ flex-direction: column;
 align-items: flex-start;
 gap: 8px;
 }
+
+
+
+
+
+
+
+
 
 
