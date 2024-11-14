@@ -50,10 +50,16 @@ function showInfo(id, locationName, locationAddress) {
                 eventCardsContainer.innerHTML = '<p>No events found for this location.</p>';
             } else {
                 // Loop through filtered events and display them
+                // Loop through filtered events and display them
                 filteredEvents.forEach(event => {
                     // Create event card container
                     const card = document.createElement("div");
                     card.classList.add("mapcard");
+
+                    // Add click event to redirect to events page with the event ID
+                    card.addEventListener("click", () => {
+                        window.location.href = `events.html?eventId=${event.id}`;
+                    });
 
                     // Create event image element
                     const img = document.createElement("img");
@@ -78,18 +84,14 @@ function showInfo(id, locationName, locationAddress) {
                     const time = document.createElement("p");
                     time.textContent = `${event.time}`;
 
-                    // Append h2 and p elements to the text layout div
+                    // Append elements to the card
                     textLayoutDiv.appendChild(name);
                     playout.appendChild(date);
                     playout.appendChild(time);
-
                     textLayoutDiv.appendChild(playout);
 
-                    // Append the image and text layout div to the card
                     card.appendChild(img);
                     card.appendChild(textLayoutDiv);
-
-                    // Append the card to the events list in the info box
                     eventCardsContainer.appendChild(card);
                 });
             }
