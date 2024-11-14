@@ -109,6 +109,8 @@ function closeInfoBox(event) {
         infoBox.style.display = 'none';
         document.removeEventListener('click', closeInfoBox);
     }
+
+
 }
 
 // Function to handle close button click
@@ -120,6 +122,8 @@ function closeInfoBoxButton(event) {
 
     // Remove the event listener after closing the info box
     document.removeEventListener('click', closeInfoBox);
+
+
 }
 
 document.querySelectorAll('.map-image').forEach((element) => {
