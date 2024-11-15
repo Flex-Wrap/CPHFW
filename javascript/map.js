@@ -50,7 +50,6 @@ function showInfo(id, locationName, locationAddress) {
                 eventCardsContainer.innerHTML = '<p>No events found for this location.</p>';
             } else {
                 // Loop through filtered events and display them
-                // Loop through filtered events and display them
                 filteredEvents.forEach(event => {
                     // Create event card container
                     const card = document.createElement("div");
